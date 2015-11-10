@@ -1,2 +1,2 @@
-# mobile-UI-components
-手机端移动UI组件收集
+# metro-css
+纯css样式组件库
