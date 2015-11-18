@@ -1,0 +1,26 @@
+.mc-select{
+	display: block;
+	height: 30px;
+	width: 270px;
+	font-size: 14px;
+	line-height: 30px;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	-moz-box-shadow:none;
+	-ms-box-shadow:none;
+	border: 1px solid #ccc;
+	outline: none;
+	resize: none;
+	padding: 5px;
+	min-height: 30px;
+}
+.mc-select option{
+	height: 30px;
+	font-weight: bold;
+}
+.mc-select:active,
+.mc-select:focus,
+.mc-select:hover{
+	border-color: #44ABE5;
+}

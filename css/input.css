@@ -1,0 +1,79 @@
+input,textarea{border:0;-webkit-appearance: none;}
+::-webkit-input-placeholder {
+	/* WebKit browsers */
+	font-size: 16px;
+	color: #9c9c9c;
+}
+:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	font-size: 16px;
+	color: #9c9c9c;
+}
+::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	font-size: 16px;
+	color: #9c9c9c;
+}
+:-ms-input-placeholder {
+	/* Internet Explorer 10+ */
+	font-size: 16px;
+	color: #9c9c9c;
+}
+.mc-textarea::-webkit-input-placeholder {
+	/* WebKit browsers */
+	font-size: 16px;
+	color: #9c9c9c;
+}
+.mc-textarea:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	font-size: 16px;
+	color: #9c9c9c;
+}
+.mc-textarea::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	font-size: 16px;
+	color: #9c9c9c;
+}
+.mc-textarea:-ms-input-placeholder {
+	/* Internet Explorer 10+ */
+	font-size: 16px;
+	color: #9c9c9c;
+}
+.mc-input,
+.mc-textarea{
+	display: block;
+	height: 25px;
+	width: 270px;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	-moz-box-shadow:none;
+	-ms-box-shadow:none;
+	border: 1px solid #ccc;
+	outline: none;
+	resize: none;
+	padding: 5px;
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+.mc-textarea{
+	height: 50px;
+	scrollbar-face-color: #44ABE5;
+	scrollbar-arrow-color: #44ABE5;
+	scrollbar-base-color:transparent;
+}
+.mc-input:focus,
+.mc-input:active,
+.mc-textarea:focus,
+.mc-textarea:active{
+	border-color: #44abe5;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	-moz-box-shadow:none;
+	-ms-box-shadow:none;
+	outline: none;
+	resize: none;
+}
+

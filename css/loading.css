@@ -1,0 +1,229 @@
+/*方块加载*/
+
+.mc-load-block {
+	width: 10px;
+	height: 10px;
+	background-color: transparent;
+	border: 10px solid #67CF22;
+	margin: 20px;
+	-o-animation: animation_block 1.2s infinite ease-in-out;
+	-ms-animation: animation_block 1.2s infinite ease-in-out;
+	-moz-animation: animation_block 1.2s infinite ease-in-out;
+	-webkit-animation: animation_block 1.2s infinite ease-in-out;
+	animation: animation_block 1.2s infinite ease-in-out;
+}
+
+@-o-keyframes animation_block {
+	0% {
+		-webkit-transform: perspective(120px)
+	}
+	50% {
+		-webkit-transform: perspective(120px) rotateY(180deg)
+	}
+	100% {
+		-webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+	}
+}
+
+@-ms-keyframes animation_block {
+	0% {
+		-webkit-transform: perspective(120px)
+	}
+	50% {
+		-webkit-transform: perspective(120px) rotateY(180deg)
+	}
+	100% {
+		-webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+	}
+}
+
+@-moz-keyframes animation_block {
+	0% {
+		-webkit-transform: perspective(120px)
+	}
+	50% {
+		-webkit-transform: perspective(120px) rotateY(180deg)
+	}
+	100% {
+		-webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+	}
+}
+
+@-webkit-keyframes animation_block {
+	0% {
+		-webkit-transform: perspective(120px)
+	}
+	50% {
+		-webkit-transform: perspective(120px) rotateY(180deg)
+	}
+	100% {
+		-webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+	}
+}
+
+@keyframes animation_block {
+	0% {
+		transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+		-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+	}
+	50% {
+		transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+		-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+	}
+	100% {
+		transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+		-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+	}
+}
+
+
+/*渐变加载*/
+
+.mc-load-gradient {
+	width: 40px;
+	height: 40px;
+	margin: 20px;
+	background-color: #67CF22;
+	border-radius: 100%;
+	-o-animation: animation_gradient 1.0s infinite ease-in-out;
+	-ms-animation: animation_gradient 1.0s infinite ease-in-out;
+	-moz-animation: animation_gradient 1.0s infinite ease-in-out;
+	-webkit-animation: animation_gradient 1.0s infinite ease-in-out;
+	animation: animation_gradient 1.0s infinite ease-in-out;
+}
+
+@-o-keyframes animation_gradient {
+	0% {
+		-webkit-transform: scale(0.0)
+	}
+	100% {
+		-webkit-transform: scale(1.0);
+		opacity: 0;
+	}
+}
+
+@-ms-keyframes animation_gradient {
+	0% {
+		-webkit-transform: scale(0.0)
+	}
+	100% {
+		-webkit-transform: scale(1.0);
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes animation_gradient {
+	0% {
+		-webkit-transform: scale(0.0)
+	}
+	100% {
+		-webkit-transform: scale(1.0);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes animation_gradient {
+	0% {
+		-webkit-transform: scale(0.0)
+	}
+	100% {
+		-webkit-transform: scale(1.0);
+		opacity: 0;
+	}
+}
+
+@keyframes animation_gradient {
+	0% {
+		transform: scale(0.0);
+		-webkit-transform: scale(0.0);
+	}
+	100% {
+		transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+		opacity: 0;
+	}
+}
+
+
+/*循环变化*/
+
+.mc-load-bounce {
+	width: 40px;
+	height: 40px;
+	position: relative;
+	margin: 20px;
+}
+
+.bounce-one,
+.bounce-two {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #67CF22;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-o-animation: animation_bounce 2.0s infinite ease-in-out;
+	-ms-animation: animation_bounce 2.0s infinite ease-in-out;
+	-moz-animation: animation_bounce 2.0s infinite ease-in-out;
+	-webkit-animation: animation_bounce 2.0s infinite ease-in-out;
+	animation: animation_bounce 2.0s infinite ease-in-out;
+}
+
+.bounce-two {
+	-webkit-animation-delay: -1.0s;
+	animation-delay: -1.0s;
+}
+
+@-o-keyframes animation_bounce {
+	0%,
+	100% {
+		-webkit-transform: scale(0.0)
+	}
+	50% {
+		-webkit-transform: scale(1.0)
+	}
+}
+
+@-ms-keyframes animation_bounce {
+	0%,
+	100% {
+		-webkit-transform: scale(0.0)
+	}
+	50% {
+		-webkit-transform: scale(1.0)
+	}
+}
+
+@-moz-keyframes animation_bounce {
+	0%,
+	100% {
+		-webkit-transform: scale(0.0)
+	}
+	50% {
+		-webkit-transform: scale(1.0)
+	}
+}
+
+@-webkit-keyframes animation_bounce {
+	0%,
+	100% {
+		-webkit-transform: scale(0.0)
+	}
+	50% {
+		-webkit-transform: scale(1.0)
+	}
+}
+
+@keyframes animation_bounce {
+	0%,
+	100% {
+		transform: scale(0.0);
+		-webkit-transform: scale(0.0);
+	}
+	50% {
+		transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	}
+}
