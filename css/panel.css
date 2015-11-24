@@ -1,0 +1,26 @@
+.mc-panel{
+	display: block;
+	width: 75%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	border: 1px solid #eaeaea;
+	border-radius: 4px;
+}
+.mc-panel-title{
+	display: block;
+	width: auto;
+	border-bottom: 1px solid #eaeaea;
+	font-size: 18px;
+    color: #666;
+    background-color: #fbfbfb;
+    margin: 0;
+    padding: 11px 15px 10px;
+}
+.mc-panel-content{
+	display: block;
+	height: auto;
+	width: auto;
+	padding: 10px;
+	border-top: none;
+}

@@ -5,6 +5,7 @@ html {
 
 body {
 	margin: 0;
+	padding: 0;
 }
 
 article,
@@ -56,8 +57,8 @@ template {
 }
 
 a {
-	background-color: transparent;
 	text-decoration: none;
+	color: #333;
 }
 
 a:active,
@@ -241,8 +242,8 @@ li {
 }
 /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
 ::-webkit-scrollbar {
-	width: 16px;
-	height: 16px;
+	width: 8px;
+	height: 8px;
 	background-color: #eee;
 }
 /*定义滚动条轨道*/
@@ -257,14 +258,30 @@ li {
 	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
 	background-color: #44ABE5;
 }
-.mc-btn{
-	display: inline-block;
-	padding: 10px;
-	font-size: 16px;
+.mc-btn,
+.mc-btn-block{
+	padding: 5px 10px;
+	font-size: 14px;
+	/*height: 44px;*/
 	border: 1px solid #ccc;
 	background-color: #fff;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	color: #333;
+	filter:chroma(color=#000000);
 }
-.mc-btn:hover{
+.mc-btn{
+	display: inline-block;
+}
+.mc-btn-block{
+	display: block;
+	margin: 10px auto;
+	width: 70%;
+	min-width: 30%;
+}
+.mc-btn:hover,
+.mc-btn-block:hover{
 	background-color: #eee;
 }
 .mc-btn-primary{
@@ -307,8 +324,50 @@ li {
 .mc-btn-danger:hover{
 	background-color: #BD2420;
 }
+input[type=button]:disabled{
+	background-color: #eee;
+	cursor: not-allowed;
+}
+.mc-btn-round{
+	border-radius: 15px;
+}
 
+input[type=checkbox],
+input[type=radio]{
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	display: inline-block;
+}
 
+.mc-triangle {
+	display: block;
+	width: 0;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	border-width: 20px;
+	border-color: transparent;
+	_border-color: tomato;
+	_filter: chroma(color=tomato);
+}
+.mc-triangle-top {
+	border-style: solid dashed dashed dashed;
+	border-top-color: #44abe5;
+}
+.mc-triangle-right {
+	border-style: dashed solid dashed dashed;
+	border-right-color: #44abe5;
+}
+.mc-triangle-bottom {
+	border-style: dashed dashed solid dashed;
+	border-bottom-color: #44abe5;
+}
+.mc-triangle-left {
+	border-style: dashed dashed dashed solid;
+	border-left-color: #44abe5;
+}
 input,textarea{border:0;-webkit-appearance: none;}
 ::-webkit-input-placeholder {
 	/* WebKit browsers */
@@ -389,12 +448,383 @@ input,textarea{border:0;-webkit-appearance: none;}
 }
 
 
+/*普通列表样式ul li*/
+.mc-list{
+	width: auto;
+	display: block;
+	overflow: hidden;
+	height: auto;
+	border: 1px solid #ddd;
+}
+.mc-list .mc-list-item{
+	display: block;
+	height: 40px;
+	width: 100%;
+	float: left;
+	line-height: 40px;
+	font-size: 14px;
+	text-indent: 15px;
+	border-bottom: 1px solid #ddd;
+}
+/*块级列表*/
+.mc-list-block{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	height: auto;
+	border: 1px solid #ddd;
+}
+.mc-list-block .mc-list-item{
+	position: relative;
+	float: left;
+	min-height: 100px;
+	width: 50%;
+	line-height: 100px;
+	font-size: 14px;
+	text-align: center;
+	border-bottom: 1px dashed #ddd;
+}
+.mc-list-block .mc-list-item:hover{
+	background-color: #F9F9F9;
+}
+.mc-list-block .mc-list-item:nth-child(odd){
+	border-right: 1px dashed #ddd;
+	margin-left: -1px;
+}
+.mc-list-block .mc-list-item:nth-child(even){
+	float: right;
+}
+.mc-list-block .mc-list-item:last-child,
+.mc-list .mc-list-item:last-child{
+	border-bottom: none;
+	border-right: none;
+}
+.mc-list-item.mc-w-100{
+	width: 100%;
+}
+/*带链接的列表*/
+.mc-list a.mc-list-item{
+	cursor: pointer;
+}
+.mc-list a.mc-list-item:hover{
+	background-color: #F9F9F9;
+}
+/*内容占据整个屏幕的列表*/
+.mc-article-list{
+	border: none;
+}
+.mc-article-list .mc-list-item{
+	padding: 20px;
+	border: 1px solid #eaeaea;
+	margin-bottom: -1px;
+	z-index: 1;
+}
+.mc-article-list .mc-list-item:last-child{
+	margin-bottom: 0;
+}
+.mc-article-list .mc-list-item:hover{
+	background-color: #FAFDFF;
+    border-color: #88D3F9;
+    position: relative;
+    z-index: 2;
+}
+/*设置禁用样式*/
+.mc-list-item.disabled, .mc-list-item.disabled:focus, .mc-list-item.disabled:hover {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #eee;
+}
+/*设置条纹*/
+.mc-list-streak .mc-list-item:nth-child(even){
+	background-color: #F7F7F9;
+}
+
+
+    
+
+/*方块加载*/
+
+.mc-load-block {
+	width: 10px;
+	height: 10px;
+	background-color: transparent;
+	border: 10px solid #67CF22;
+	margin: 20px;
+	-o-animation: animation_block 1.2s infinite ease-in-out;
+	-ms-animation: animation_block 1.2s infinite ease-in-out;
+	-moz-animation: animation_block 1.2s infinite ease-in-out;
+	-webkit-animation: animation_block 1.2s infinite ease-in-out;
+	animation: animation_block 1.2s infinite ease-in-out;
+}
+
+@-o-keyframes animation_block {
+	0% {
+		-webkit-transform: perspective(120px)
+	}
+	50% {
+		-webkit-transform: perspective(120px) rotateY(180deg)
+	}
+	100% {
+		-webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+	}
+}
+
+@-ms-keyframes animation_block {
+	0% {
+		-webkit-transform: perspective(120px)
+	}
+	50% {
+		-webkit-transform: perspective(120px) rotateY(180deg)
+	}
+	100% {
+		-webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+	}
+}
+
+@-moz-keyframes animation_block {
+	0% {
+		-webkit-transform: perspective(120px)
+	}
+	50% {
+		-webkit-transform: perspective(120px) rotateY(180deg)
+	}
+	100% {
+		-webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+	}
+}
+
+@-webkit-keyframes animation_block {
+	0% {
+		-webkit-transform: perspective(120px)
+	}
+	50% {
+		-webkit-transform: perspective(120px) rotateY(180deg)
+	}
+	100% {
+		-webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+	}
+}
+
+@keyframes animation_block {
+	0% {
+		transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+		-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+	}
+	50% {
+		transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+		-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+	}
+	100% {
+		transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+		-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+	}
+}
+
+
+/*渐变加载*/
+
+.mc-load-gradient {
+	width: 40px;
+	height: 40px;
+	margin: 20px;
+	background-color: #67CF22;
+	border-radius: 100%;
+	-o-animation: animation_gradient 1.0s infinite ease-in-out;
+	-ms-animation: animation_gradient 1.0s infinite ease-in-out;
+	-moz-animation: animation_gradient 1.0s infinite ease-in-out;
+	-webkit-animation: animation_gradient 1.0s infinite ease-in-out;
+	animation: animation_gradient 1.0s infinite ease-in-out;
+}
+
+@-o-keyframes animation_gradient {
+	0% {
+		-webkit-transform: scale(0.0)
+	}
+	100% {
+		-webkit-transform: scale(1.0);
+		opacity: 0;
+	}
+}
+
+@-ms-keyframes animation_gradient {
+	0% {
+		-webkit-transform: scale(0.0)
+	}
+	100% {
+		-webkit-transform: scale(1.0);
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes animation_gradient {
+	0% {
+		-webkit-transform: scale(0.0)
+	}
+	100% {
+		-webkit-transform: scale(1.0);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes animation_gradient {
+	0% {
+		-webkit-transform: scale(0.0)
+	}
+	100% {
+		-webkit-transform: scale(1.0);
+		opacity: 0;
+	}
+}
+
+@keyframes animation_gradient {
+	0% {
+		transform: scale(0.0);
+		-webkit-transform: scale(0.0);
+	}
+	100% {
+		transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+		opacity: 0;
+	}
+}
+
+
+/*循环变化*/
+
+.mc-load-bounce {
+	width: 40px;
+	height: 40px;
+	position: relative;
+	margin: 20px;
+}
+
+.bounce-one,
+.bounce-two {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #67CF22;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-o-animation: animation_bounce 2.0s infinite ease-in-out;
+	-ms-animation: animation_bounce 2.0s infinite ease-in-out;
+	-moz-animation: animation_bounce 2.0s infinite ease-in-out;
+	-webkit-animation: animation_bounce 2.0s infinite ease-in-out;
+	animation: animation_bounce 2.0s infinite ease-in-out;
+}
+
+.bounce-two {
+	-webkit-animation-delay: -1.0s;
+	animation-delay: -1.0s;
+}
+
+@-o-keyframes animation_bounce {
+	0%,
+	100% {
+		-webkit-transform: scale(0.0)
+	}
+	50% {
+		-webkit-transform: scale(1.0)
+	}
+}
+
+@-ms-keyframes animation_bounce {
+	0%,
+	100% {
+		-webkit-transform: scale(0.0)
+	}
+	50% {
+		-webkit-transform: scale(1.0)
+	}
+}
+
+@-moz-keyframes animation_bounce {
+	0%,
+	100% {
+		-webkit-transform: scale(0.0)
+	}
+	50% {
+		-webkit-transform: scale(1.0)
+	}
+}
+
+@-webkit-keyframes animation_bounce {
+	0%,
+	100% {
+		-webkit-transform: scale(0.0)
+	}
+	50% {
+		-webkit-transform: scale(1.0)
+	}
+}
+
+@keyframes animation_bounce {
+	0%,
+	100% {
+		transform: scale(0.0);
+		-webkit-transform: scale(0.0);
+	}
+	50% {
+		transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+	}
+}
 .content {
 	width: 1000px;
 	display: block;
 	height: auto;
 	overflow: hidden;
 	margin: 0 auto;
+}
+.w-350{
+	width: 350px;
+	margin: 0 auto;
+}
+.w-820{
+	width: 820px;
+	margin: 0 auto;
+}
+/*公共可以使用的css样式*/
+.mc-radius{
+	border-radius: 4px;
+}
+.mc-align-left{
+	text-align: left;
+}
+.mc-align-right{
+	text-align: right;
+}
+.mc-align-center{
+	text-align: center;
+}
+
+.mc-panel{
+	display: block;
+	width: 75%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	border: 1px solid #eaeaea;
+	border-radius: 4px;
+}
+.mc-panel-title{
+	display: block;
+	width: auto;
+	border-bottom: 1px solid #eaeaea;
+	font-size: 18px;
+    color: #666;
+    background-color: #fbfbfb;
+    margin: 0;
+    padding: 11px 15px 10px;
+}
+.mc-panel-content{
+	display: block;
+	height: auto;
+	width: auto;
+	padding: 10px;
+	border-top: none;
 }
 
 .mc-select{
@@ -422,6 +852,43 @@ input,textarea{border:0;-webkit-appearance: none;}
 .mc-select:focus,
 .mc-select:hover{
 	border-color: #44ABE5;
+}
+
+.mc-table {
+	color: #333333;
+	border-collapse: collapse;
+	width: 75%;
+	margin: 0 auto;
+	border: 1px solid #83D1F5;
+}
+.mc-table thead th,
+.mc-table tbody td,
+.mc-table tfoot td{
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #83D1F5;
+	font-size: 12px;
+}
+.mc-table thead th{
+	font-size: 14px;
+	text-align: left;
+	border: none;
+	background-color: #83D1F5;
+	color: #fff;
+}
+.mc-table tfoot td{
+	font-size: 14px;
+	text-align: right;
+}
+.mc-table tr:hover{
+	background-color: #dbecf9;
+}
+.mc-table tbody tr:first-child td{
+	background-color: #798979;
+}
+.mc-table tbody tr:nth-child(odd) td{
+	background-color: #ECF6EC;
 }
 
 hr{

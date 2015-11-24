@@ -1,0 +1,93 @@
+/*普通列表样式ul li*/
+.mc-list{
+	width: auto;
+	display: block;
+	overflow: hidden;
+	height: auto;
+	border: 1px solid #ddd;
+}
+.mc-list .mc-list-item{
+	display: block;
+	height: 40px;
+	width: 100%;
+	float: left;
+	line-height: 40px;
+	font-size: 14px;
+	text-indent: 15px;
+	border-bottom: 1px solid #ddd;
+}
+/*块级列表*/
+.mc-list-block{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	height: auto;
+	border: 1px solid #ddd;
+}
+.mc-list-block .mc-list-item{
+	position: relative;
+	float: left;
+	min-height: 100px;
+	width: 50%;
+	line-height: 100px;
+	font-size: 14px;
+	text-align: center;
+	border-bottom: 1px dashed #ddd;
+}
+.mc-list-block .mc-list-item:hover{
+	background-color: #F9F9F9;
+}
+.mc-list-block .mc-list-item:nth-child(odd){
+	border-right: 1px dashed #ddd;
+	margin-left: -1px;
+}
+.mc-list-block .mc-list-item:nth-child(even){
+	float: right;
+}
+.mc-list-block .mc-list-item:last-child,
+.mc-list .mc-list-item:last-child{
+	border-bottom: none;
+	border-right: none;
+}
+.mc-list-item.mc-w-100{
+	width: 100%;
+}
+/*带链接的列表*/
+.mc-list a.mc-list-item{
+	cursor: pointer;
+}
+.mc-list a.mc-list-item:hover{
+	background-color: #F9F9F9;
+}
+/*内容占据整个屏幕的列表*/
+.mc-article-list{
+	border: none;
+}
+.mc-article-list .mc-list-item{
+	padding: 20px;
+	border: 1px solid #eaeaea;
+	margin-bottom: -1px;
+	z-index: 1;
+}
+.mc-article-list .mc-list-item:last-child{
+	margin-bottom: 0;
+}
+.mc-article-list .mc-list-item:hover{
+	background-color: #FAFDFF;
+    border-color: #88D3F9;
+    position: relative;
+    z-index: 2;
+}
+/*设置禁用样式*/
+.mc-list-item.disabled, .mc-list-item.disabled:focus, .mc-list-item.disabled:hover {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #eee;
+}
+/*设置条纹*/
+.mc-list-streak .mc-list-item:nth-child(even){
+	background-color: #F7F7F9;
+}
+
+
+    

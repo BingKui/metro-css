@@ -5,6 +5,14 @@
 	overflow: hidden;
 	margin: 0 auto;
 }
+.w-350{
+	width: 350px;
+	margin: 0 auto;
+}
+.w-820{
+	width: 820px;
+	margin: 0 auto;
+}
 /*公共可以使用的css样式*/
 .mc-radius{
 	border-radius: 4px;

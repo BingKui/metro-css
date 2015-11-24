@@ -9,6 +9,7 @@
 	cursor: pointer;
 	text-align: center;
 	color: #333;
+	filter:chroma(color=#000000);
 }
 .mc-btn{
 	display: inline-block;
