@@ -1,6 +1,6 @@
 # metro-css
 纯css样式组件库
-<<<<<<< HEAD
+
 ##使用方法
 引入css文件：
 
