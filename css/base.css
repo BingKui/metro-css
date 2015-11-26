@@ -3,7 +3,7 @@ html {
 	-ms-text-size-adjust: 100%;
 }
 
-body {
+html,body {
 	margin: 0;
 	padding: 0;
 }

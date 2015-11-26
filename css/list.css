@@ -4,16 +4,15 @@
 	display: block;
 	overflow: hidden;
 	height: auto;
-	border: 1px solid #ddd;
 }
 .mc-list .mc-list-item{
 	display: block;
-	height: 40px;
+	height: auto;
+	min-height: 40px;
 	width: 100%;
 	float: left;
 	line-height: 40px;
 	font-size: 14px;
-	text-indent: 15px;
 	border-bottom: 1px solid #ddd;
 }
 /*块级列表*/
@@ -22,7 +21,7 @@
 	display: block;
 	overflow: hidden;
 	height: auto;
-	border: 1px solid #ddd;
+	/*border: 1px solid #ddd;*/
 }
 .mc-list-block .mc-list-item{
 	position: relative;

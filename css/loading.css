@@ -172,6 +172,7 @@
 }
 
 .bounce-two {
+	margin-left: 50%;
 	-webkit-animation-delay: -1.0s;
 	animation-delay: -1.0s;
 }

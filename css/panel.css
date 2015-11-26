@@ -1,11 +1,10 @@
 .mc-panel{
 	display: block;
-	width: 75%;
+	width: 95%;
 	height: auto;
 	overflow: hidden;
 	margin: 0 auto;
 	border: 1px solid #eaeaea;
-	border-radius: 4px;
 }
 .mc-panel-title{
 	display: block;
@@ -21,6 +20,5 @@
 	display: block;
 	height: auto;
 	width: auto;
-	padding: 10px;
 	border-top: none;
 }

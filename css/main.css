@@ -13,6 +13,12 @@
 	width: 820px;
 	margin: 0 auto;
 }
+.box{
+	border: 1px solid #ccc;
+	height: auto;
+	width: auto;
+	overflow: hidden;
+}
 /*公共可以使用的css样式*/
 .mc-radius{
 	border-radius: 4px;
