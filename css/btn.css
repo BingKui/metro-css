@@ -1,8 +1,17 @@
+/*普通按钮、块级按钮*/
 .mc-btn,
-.mc-btn-block{
+.mc-btn-block,
+.mc-btn-small,
+.mc-btn-big,
+.mc-btn-large,
+.mc-btn-block-small,
+.mc-btn-block-big,
+.mc-btn-block-large,
+.mc-btn-ghost{
+	margin: 5px;
 	padding: 5px 10px;
 	font-size: 14px;
-	/*height: 44px;*/
+	font-weight: bold;
 	border: 1px solid #ccc;
 	background-color: #fff;
 	outline: none;
@@ -11,63 +20,192 @@
 	color: #333;
 	filter:chroma(color=#000000);
 }
-.mc-btn{
+.mc-btn,
+input[type=button]{
 	display: inline-block;
 }
 .mc-btn-block{
+	padding-top: 7px;
+	padding-bottom: 7px;
+	font-size: 14px;
+}
+/*不同尺寸的按钮*/
+/*.mc-btn-small,
+.mc-btn-big,
+.mc-btn-large,
+.mc-btn-block-small,
+.mc-btn-block-big,
+.mc-btn-block-large{
+	margin: 5px;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	color: #333;
+	filter:chroma(color=#000000);
+}*/
+/*重定义块级按钮的样式*/
+.mc-btn-block,
+.mc-btn-block-small,
+.mc-btn-block-big,
+.mc-btn-block-large{
 	display: block;
 	margin: 10px auto;
 	width: 70%;
 	min-width: 30%;
 }
-.mc-btn:hover,
-.mc-btn-block:hover{
+/*设置普通按钮的大小尺寸*/
+.mc-btn-small{
+	padding-top: 5px;
+	padding-bottom:5px;
+	font-size: 12px;
+}
+.mc-btn-big{
+	padding-top: 9px;
+	padding-bottom: 9px;
+	font-size: 16px;
+}
+.mc-btn-large{
+	padding-top: 11px;
+	padding-bottom: 11px;
+	font-size: 18px;
+}
+/*设置块级按钮的大小尺寸*/
+.mc-btn-block-small{
+	padding: 3px 5px;
+	font-size: 12px;
+}
+.mc-btn-block-big{
+	padding: 7px 15px;
+	font-size: 16px;
+}
+.mc-btn-block-large{
+	padding: 9px 20px;
+	font-size: 18px;
+}
+/*幽灵按钮样式*/
+.mc-btn-ghost,
+.mc-btn-ghost.mc-btn-default{
+	color: #fff;
+	background-color: transparent !important;
+	border-style: solid;
+	border-width:2px ;
+	border-color: #fff;
+}
+/*默认样式hover*/
+/*.mc-btn:hover,
+.mc-btn:active,
+.mc-btn-block:hover,
+.mc-btn-block:active,
+.mc-btn-small:hover,
+.mc-btn-small:active,
+.mc-btn-big:hover,
+.mc-btn-big:active,
+.mc-btn-large:hover,
+.mc-btn-large:active,
+.mc-btn-block-small:hover,
+.mc-btn-block-small:active,
+.mc-btn-block-big:hover,
+.mc-btn-block-big:active,
+.mc-btn-block-large:hover,
+.mc-btn-block-large:active{
+	background-color: #eee;
+}*/
+
+/*默认defaults*/
+.mc-btn-default{
+	border-color: #ccc;
+	background-color: #fff;
+	color: #333;
+}
+.mc-btn-default:hover,
+.mc-btn-default:active{
 	background-color: #eee;
 }
+.mc-btn-ghost.mc-btn-default{
+	color: #fff;
+}
+/*推荐项primary*/
 .mc-btn-primary{
 	border-color: #337AB7;
 	background-color: #337AB7;
 	color: #fff;
 }
-.mc-btn-primary:hover{
+.mc-btn-primary:hover,
+.mc-btn-primary:active{
 	background-color: #0C5B9F;
 }
+.mc-btn-ghost.mc-btn-primary{
+	color: #337AB7;
+}
+/*成功success*/
 .mc-btn-success{
 	border-color: #5CB85C;
 	background-color: #5CB85C;
 	color: #fff;
 }
-.mc-btn-success:hover{
+.mc-btn-success:hover,
+.mc-btn-success:active{
 	background-color: #259A25;
 }
+.mc-btn-ghost.mc-btn-success{
+	color: #5CB85C;
+}
+/*信息info*/
 .mc-btn-info{
 	border-color: #5BC0DE;
 	background-color: #5BC0DE;
 	color: #fff;
 }
-.mc-btn-info:hover{
+.mc-btn-info:hover,
+.mc-btn-info:active{
 	background-color: #2FA0C1;
 }
+.mc-btn-ghost.mc-btn-info{
+	color: #5BC0DE;
+}
+/*警告warning*/
 .mc-btn-warning{
 	border-color: #F0AD4E;
 	background-color: #F0AD4E;
 	color: #fff;
 }
-.mc-btn-warning:hover{
+.mc-btn-warning:hover,
+.mc-btn-warning:active{
 	background-color: #CF7E0B;
 }
+.mc-btn-ghost.mc-btn-warning{
+	color: #F0AD4E;
+}
+/*危险danger*/
 .mc-btn-danger{
 	border-color: #D9534F;
 	background-color: #D9534F;
 	color: #fff;
 }
-.mc-btn-danger:hover{
+.mc-btn-danger:hover,
+.mc-btn-danger:active{
 	background-color: #BD2420;
 }
-input[type=button]:disabled{
+.mc-btn-ghost.mc-btn-danger{
+	color: #D9534F;
+}
+/*不可用状态*/
+input[type=button]:disabled,
+.mc-btn.disabled,
+.mc-btn-block.disabled,
+.mc-btn-big.disabled,
+.mc-btn-block-big.disabled,
+.mc-btn-small.disabled,
+.mc-btn-block-small.disabled,
+.mc-btn-large.disabled,
+.mc-btn-block-large.disabled{
 	background-color: #eee;
 	cursor: not-allowed;
 }
+/*圆角*/
 .mc-btn-round{
 	border-radius: 15px;
 }

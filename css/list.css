@@ -67,11 +67,13 @@
 	border: 1px solid #eaeaea;
 	margin-bottom: -1px;
 	z-index: 1;
+	cursor: pointer;
 }
 .mc-article-list .mc-list-item:last-child{
 	margin-bottom: 0;
 }
-.mc-article-list .mc-list-item:hover{
+.mc-article-list .mc-list-item:hover,
+.mc-article-list .mc-list-item:active{
 	background-color: #FAFDFF;
     border-color: #88D3F9;
     position: relative;
