@@ -12,9 +12,9 @@
 	position: absolute;
 	top: 40px;
 	bottom: 0;
-	width: 10px;
+	width: 6px;
 	background: #afdcf8;
-	margin-left: -15px;
+	margin-left: -13px;
 }
 
 .mc-timeline-item {
@@ -22,17 +22,17 @@
 }
 
 .mc-timeline-icon {
-	width: 20px;
-	height: 20px;
+	width: 10px;
+	height: 10px;
 	speak: none;
 	position: absolute;
 	color: #fff;
 	background: #6cbfee;
 	border-radius: 50%;
-	box-shadow: 0 0 0 8px #afdcf8;
+	box-shadow: 0 0 0 6px #afdcf8;
 	text-align: center;
-	left: -20px;
-	top: 28px;
+	left: -15px;
+	top: 35px;
 }
 
 .mc-timeline-time {
@@ -42,7 +42,7 @@
 }
 
 .mc-timeline-content {
-	margin: 0 .5em 15px 20px;
+	margin: 0 .5em 15px 15px;
 	background: #6cbfee;
 	color: #fff;
 	padding: 1em;
