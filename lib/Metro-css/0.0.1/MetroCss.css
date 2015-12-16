@@ -314,7 +314,7 @@ input[type=button]{
 .mc-btn-block-large{
 	display: block;
 	margin: 10px auto;
-	width: 70%;
+	width: 90%;
 	min-width: 30%;
 }
 /*设置普通按钮的大小尺寸*/
@@ -384,6 +384,7 @@ input[type=button]{
 .mc-btn-default:hover,
 .mc-btn-default:active{
 	background-color: #eee;
+	border-color: #eee;
 }
 .mc-btn-ghost.mc-btn-default{
 	color: #fff;
@@ -397,6 +398,7 @@ input[type=button]{
 .mc-btn-primary:hover,
 .mc-btn-primary:active{
 	background-color: #0C5B9F;
+	border-color: #0C5B9F;
 }
 .mc-btn-ghost.mc-btn-primary{
 	color: #337AB7;
@@ -410,6 +412,7 @@ input[type=button]{
 .mc-btn-success:hover,
 .mc-btn-success:active{
 	background-color: #259A25;
+	border-color: #259A25;
 }
 .mc-btn-ghost.mc-btn-success{
 	color: #5CB85C;
@@ -423,6 +426,7 @@ input[type=button]{
 .mc-btn-info:hover,
 .mc-btn-info:active{
 	background-color: #2FA0C1;
+	border-color: #2FA0C1;
 }
 .mc-btn-ghost.mc-btn-info{
 	color: #5BC0DE;
@@ -436,6 +440,7 @@ input[type=button]{
 .mc-btn-warning:hover,
 .mc-btn-warning:active{
 	background-color: #CF7E0B;
+	border-color: #CF7E0B;
 }
 .mc-btn-ghost.mc-btn-warning{
 	color: #F0AD4E;
@@ -449,6 +454,7 @@ input[type=button]{
 .mc-btn-danger:hover,
 .mc-btn-danger:active{
 	background-color: #BD2420;
+	border-color: #BD2420;
 }
 .mc-btn-ghost.mc-btn-danger{
 	color: #D9534F;
