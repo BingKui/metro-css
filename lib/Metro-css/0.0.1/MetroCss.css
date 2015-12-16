@@ -1156,6 +1156,34 @@ input,textarea{border:0;-webkit-appearance: none;}
 	background-color: #ECF6EC;
 }
 
+.mc-textcontent,
+.mc-textcontent-center {
+	margin: .5em 0;
+	color: #333;
+	padding: .7em;
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 1.4;
+	position: relative;
+}
+.mc-textcontent h3,
+.mc-textcontent-center h3 {
+	margin: 0 0 15px 0;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid rgba(3, 3, 3, 0.4);
+}
+.mc-textcontent p{
+	margin: 0;
+}
+.mc-textcontent-center p {
+	margin: 0;
+	text-indent: 2em;
+}
+.mc-textcontent-center h3{
+	text-align: center;
+	border-bottom:none;
+}
+
 .mc-timeline {
 	margin: 0 0 0 30px;
 	padding: 0;
