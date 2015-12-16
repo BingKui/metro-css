@@ -64,6 +64,7 @@ a {
 a:active,
 a:hover {
 	outline: 0;
+	text-decoration: none;
 }
 
 abbr[title] {
@@ -313,7 +314,7 @@ input[type=button]{
 .mc-btn-block-large{
 	display: block;
 	margin: 10px auto;
-	width: 70%;
+	width: 90%;
 	min-width: 30%;
 }
 /*设置普通按钮的大小尺寸*/
@@ -383,6 +384,7 @@ input[type=button]{
 .mc-btn-default:hover,
 .mc-btn-default:active{
 	background-color: #eee;
+	border-color: #eee;
 }
 .mc-btn-ghost.mc-btn-default{
 	color: #fff;
@@ -396,6 +398,7 @@ input[type=button]{
 .mc-btn-primary:hover,
 .mc-btn-primary:active{
 	background-color: #0C5B9F;
+	border-color: #0C5B9F;
 }
 .mc-btn-ghost.mc-btn-primary{
 	color: #337AB7;
@@ -409,6 +412,7 @@ input[type=button]{
 .mc-btn-success:hover,
 .mc-btn-success:active{
 	background-color: #259A25;
+	border-color: #259A25;
 }
 .mc-btn-ghost.mc-btn-success{
 	color: #5CB85C;
@@ -422,6 +426,7 @@ input[type=button]{
 .mc-btn-info:hover,
 .mc-btn-info:active{
 	background-color: #2FA0C1;
+	border-color: #2FA0C1;
 }
 .mc-btn-ghost.mc-btn-info{
 	color: #5BC0DE;
@@ -435,6 +440,7 @@ input[type=button]{
 .mc-btn-warning:hover,
 .mc-btn-warning:active{
 	background-color: #CF7E0B;
+	border-color: #CF7E0B;
 }
 .mc-btn-ghost.mc-btn-warning{
 	color: #F0AD4E;
@@ -448,6 +454,7 @@ input[type=button]{
 .mc-btn-danger:hover,
 .mc-btn-danger:active{
 	background-color: #BD2420;
+	border-color: #BD2420;
 }
 .mc-btn-ghost.mc-btn-danger{
 	color: #D9534F;
@@ -1143,6 +1150,82 @@ input,textarea{border:0;-webkit-appearance: none;}
 	background-color: #ECF6EC;
 }
 
+.mc-timeline {
+	margin: 0 0 0 30px;
+	padding: 0;
+	position: relative;
+	-webkit-padding-start: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-before: 0;
+}
+
+.mc-timeline:before {
+	content: '';
+	position: absolute;
+	top: 40px;
+	bottom: 0;
+	width: 6px;
+	background: #afdcf8;
+	margin-left: -13px;
+}
+
+.mc-timeline-item {
+	position: relative;
+}
+
+.mc-timeline-icon {
+	width: 10px;
+	height: 10px;
+	speak: none;
+	position: absolute;
+	color: #fff;
+	background: #6cbfee;
+	border-radius: 50%;
+	box-shadow: 0 0 0 6px #afdcf8;
+	text-align: center;
+	left: -15px;
+	top: 35px;
+}
+
+.mc-timeline-time {
+	position: relative;
+	left: 20px;
+	top: -2px;
+}
+
+.mc-timeline-content {
+	margin: 0 .5em 15px 15px;
+	background: #6cbfee;
+	color: #fff;
+	padding: 1em;
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 1.4;
+	position: relative;
+}
+
+.mc-timeline-content h3 {
+	margin: 0 0 15px 0;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.mc-timeline-content p {
+	margin: 0;
+}
+
+.mc-timeline-content:after {
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: #6cbfee;
+	border-width: 10px;
+	top: 10px;
+}
 hr{
 	height: 2px;
 	border: none;
