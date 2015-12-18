@@ -54,3 +54,24 @@
 	border-style: dashed dashed dashed solid;
 	border-left-color: #44abe5;
 }
+/*公共颜色*/
+/*推荐项primary*/
+.mc-primary{
+	color: #337AB7;
+}
+/*成功success*/
+.mc-success{
+	color: #5CB85C;
+}
+/*信息info*/
+.mc-info{
+	color: #5BC0DE;
+}
+/*警告warning*/
+.mc-warning{
+	color: #F0AD4E;
+}
+/*危险danger*/
+.mc-danger{
+	color: #D9534F;
+}
