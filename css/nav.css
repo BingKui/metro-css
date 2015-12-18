@@ -1,0 +1,50 @@
+.mc-nav {
+	/*盒模型*/
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	/*横向or纵向*/
+	-webkit-box-orient: horizontal;
+	/*属性值：[horizontal]横向/[vertical]纵向*/
+	-moz-box-orient: horizontal;
+	box-orient: horizontal;
+	margin: auto;
+	border: none;
+	width: 100%;
+	height: 105px;
+	border-bottom: 1px solid #ccc;
+}
+.mc-nav:last-child{
+	border-bottom: none;
+}
+.mc-nav-item{
+	/*占有比例*/
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	box-flex: 1;
+	text-align: center;
+	line-height: 100%;
+	color: #fff;
+	border-right:1px solid #ccc;
+}
+.mc-nav-item:last-child{
+	border-right: none;
+}
+/*内容*/
+.mc-nav-content{
+	display: block;
+	width: 100%;
+	height: 105px;
+}
+.mc-nav-content i{
+	display: block;
+	width: 100%;
+	font-size: 2em;
+	height: 105px;
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    text-align: center;
+    height: 105px; 
+}

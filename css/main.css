@@ -25,3 +25,32 @@
 .mc-align-center{
 	text-align: center;
 }
+/*三角形*/
+.mc-triangle {
+	display: block;
+	width: 0;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+	border-width: 20px;
+	border-color: transparent;
+	_border-color: tomato;
+	_filter: chroma(color=tomato);
+}
+.mc-triangle-top {
+	border-style: solid dashed dashed dashed;
+	border-top-color: #44abe5;
+}
+.mc-triangle-right {
+	border-style: dashed solid dashed dashed;
+	border-right-color: #44abe5;
+}
+.mc-triangle-bottom {
+	border-style: dashed dashed solid dashed;
+	border-bottom-color: #44abe5;
+}
+.mc-triangle-left {
+	border-style: dashed dashed dashed solid;
+	border-left-color: #44abe5;
+}
