@@ -12,10 +12,13 @@
 	border: none;
 	width: 100%;
 	height: 105px;
-	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
 }
 .mc-nav:last-child{
-	border-bottom: none;
+	border-bottom: 1px solid #ccc;
+}
+.mc-nav:nth-child(even){
+	background-color: #FCFCFB;
 }
 .mc-nav-item{
 	/*占有比例*/
@@ -30,18 +33,43 @@
 .mc-nav-item:last-child{
 	border-right: none;
 }
+.mc-nav-item a{
+	display: block;
+	border-radius: 0;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+.mc-nav-item a:active{
+	background-color: #ccc;
+}
 /*内容*/
 .mc-nav-content{
 	display: block;
 	width: 100%;
+	min-width:70px;
 	height: 105px;
+	margin: 0 auto;
+	border-radius: 0;
+	color: #555;
+	outline: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	pointer-events: none;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+.mc-nav-content:active{
+	background-color: #ccc;
 }
 .mc-nav-content i{
-	display: block;
 	width: 100%;
 	font-size: 2em;
 	height: 105px;
 	display: -webkit-box;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	pointer-events: none;
     -webkit-box-orient: vertical;
     -webkit-box-pack: center;
     -webkit-box-align: center;
