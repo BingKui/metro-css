@@ -9,7 +9,10 @@
 		}, 	
 		cssmin: {
 			options: {
-				banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n',
+				banner: '/*!\n' +
+			            ' * <%= pkg.name %> v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+			            ' * Copyright 2015-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+			            ' */\n',
 				beautify: {
 					ascii_only: true
 				}
