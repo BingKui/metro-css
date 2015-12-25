@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
 		<link rel="stylesheet" href="css/tools.css" />
 		<link rel="stylesheet" type="text/css" href="lib/Metro-css/0.0.1/MetroCss.min.css" />
+		<link rel="stylesheet" type="text/css" href="lib/MaterialMenu/css/style.css"/>
 		<style type="text/css">
 			.t-content{
 				font-size: 2em;
@@ -22,6 +23,7 @@
 	</head>
 
 	<body>
+		<div id="wrapper" class="wrapper">
 		<section class="page-header">
 			<h1 class="project-name">Metro-css</h1>
 			<h2 class="project-tagline">手机端移动UI组件库</h2>
@@ -52,7 +54,7 @@
 								<div class="block--spaced u-center">
 									<div class="col-sm-3">
 										<figure class="block--speaker">
-											<a class="speaker__link" href="http://www.zhihu.com/people/kang-bing-kui">
+											<a class="speaker__link" href="html/author.html">
 												<div class="speaker__img"> <img src="img/bingkui.png" alt="康兵奎"> </div>
 												<figcaption class="block__label">
 													<h3 class="label__heading">康兵奎</h3>
@@ -93,6 +95,60 @@
 				</div>
 			</div>
 		</footer>
+		</div>
+		<!--菜单-->
+		<button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button>
+		<nav id="mm-menu" class="mm-menu">
+			<div class="mm-menu__header">
+				<h2 class="mm-menu__title">菜单列表</h2>
+			</div>
+			<ul class="mm-menu__items">
+				<li class="mm-menu__item">
+					<a class="mm-menu__link" href="html/author.html">
+						<span class="mm-menu__link-text">关于作者</span>
+					</a>
+				</li>
+				<li class="mm-menu__item">
+					<a class="mm-menu__link" href="html/button.html">
+						<span class="mm-menu__link-text">按钮</span>
+					</a>
+				</li>
+				<li class="mm-menu__item">
+					<a class="mm-menu__link" href="html/list.html">
+						<span class="mm-menu__link-text">列表</span>
+					</a>
+				</li>
+				<li class="mm-menu__item">
+					<a class="mm-menu__link" href="html/input.html">
+						<span class="mm-menu__link-text">输入框</span>
+					</a>
+				</li>
+				<li class="mm-menu__item">
+					<a class="mm-menu__link" href="html/media.html">
+						<span class="mm-menu__link-text">媒体元素</span>
+					</a>
+				</li>
+				<li class="mm-menu__item">
+					<a class="mm-menu__link" href="html/panel.html">
+						<span class="mm-menu__link-text">面板</span>
+					</a>
+				</li>
+				<li class="mm-menu__item">
+					<a class="mm-menu__link" href="html/timeline.html">
+						<span class="mm-menu__link-text">时间线</span>
+					</a>
+				</li>
+				<li class="mm-menu__item">
+					<a class="mm-menu__link" href="html/text-content.html">
+						<span class="mm-menu__link-text">文本区</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<script src="lib/MaterialMenu/js/materialMenu.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var menu = new Menu;
+		</script>
 	</body>
 
 </html>

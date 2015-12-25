@@ -1,0 +1,68 @@
+.head,
+.content,
+.info,
+.contact {
+	width: 100%;
+	height: 300px;
+	display: block;
+	overflow: hidden;
+}
+
+.head {
+	background-color: #44abe5;
+}
+
+.author-img {
+	display: block;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	margin: 0 auto;
+	border-radius: 50%;
+	margin-top: 70px;
+}
+
+.author-info {
+	height: 70px;
+	margin-top: 10px;
+}
+
+.author-info span {
+	width: 100%;
+	display: block;
+	height: 35px;
+	line-height: 35px;
+	font-size: 1.2em;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+}
+
+.content {
+	background-color: #845CD9;
+}
+
+.info {
+	background-color: #747170;
+}
+
+.contact {
+	background-color: #4DB394;
+}
+/*info*/
+.my-info{
+	width: 90%;
+	height: 260px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 40px;
+	color: #fff;
+}
+.my-info h1{
+	font-size: 2em;
+	font-weight: bold;
+	color: #fff;
+}
+.text-right h1{
+	text-align: right;
+}
