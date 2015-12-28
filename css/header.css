@@ -1,0 +1,53 @@
+.mc-header{
+	height: 44px;
+	display: block;
+	width: 100%;
+	background-color: #7A6EA0;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.mc-menu-left ,.mc-menu-right{
+    width: 44px;
+    height: 44px;
+	font-size: 30px;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+    z-index: 20;
+}
+.mc-menu-right{
+	top: 0;
+	right: 0;
+}
+.mc-menu-title{
+	text-align: center;
+	right: 44px;
+    left: 44px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 44px;
+    padding: 0;
+    white-space: nowrap;
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    -webkit-user-select: none;/*不能选中*/
+}
+/*.mc-menu-title{
+	right: 40px;
+    left: 40px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 44px;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+    color: #000;
+    display: inline-block;
+    overflow: hidden;
+    width: auto;
+    margin: 0;
+    text-overflow: ellipsis;
+}*/
