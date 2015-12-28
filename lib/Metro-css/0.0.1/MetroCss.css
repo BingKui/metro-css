@@ -4,6 +4,8 @@ html,body{
 	width: 100%;
 	height: 100%;
 	overflow-x:hidden;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 html,body {
@@ -115,6 +117,8 @@ sub {
 
 img {
 	border: 0;
+	width: 100%;
+	height: 100%;
 }
 
 svg:not(:root) {
@@ -491,6 +495,39 @@ input[type=radio]{
 	height: 20px;
 	background-color: #fff;
 	display: inline-block;
+}
+
+.mc-footer{
+	height: auto;
+	background-color: #32374d;
+	min-height: 70px;
+}
+/*footer顶部logo*/
+.mc-footer-img{
+	width: 60px;
+	height: 60px;
+	display: block;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+/*footer内容*/
+.mc-footer-content{
+	padding-bottom: 10px;
+	text-align: center;
+}
+.mc-footer-content p{
+	width: 100%;
+	display: block;
+	color: #fff;
+}
+.mc-footer-content span{
+	color: #fff;
+	display: inline-block;
+	margin-top: 25px;
+	padding-right: 10px;
+}
+.mc-footer-content span:last-child{
+	padding-right: 0;
 }
 
 @font-face {
