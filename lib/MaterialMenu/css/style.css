@@ -145,13 +145,9 @@ a {
   PRIMARY LAYOUT
 ============================================================================= */
 .wrapper {
-	-webkit-overflow-scrolling: touch;
   z-index: 5;
   -webkit-transition: -webkit-transform 0.5s;
           transition: transform 0.5s;
-}
-.wrapper *{
-	-webkit-overflow-scrolling: touch;
 }
 .wrapper.mm-menu-open {
   -webkit-transform: translateX(300px);
