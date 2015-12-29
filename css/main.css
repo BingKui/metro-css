@@ -75,3 +75,17 @@
 .mc-danger{
 	color: #D9534F;
 }
+/*标题*/
+.mc-ut-title{
+	width: 100%;
+	display: inline-block;
+	height: 40px;
+	font-size: 20px;
+	line-height: 40px;
+	color: #777;
+	background-color: #eee;
+	cursor: default;
+	border: 1px solid #e8ee8;
+	border-left: none;
+	border-right: none;
+}
