@@ -90,6 +90,8 @@ input,textarea{border:0;-webkit-appearance: none;}
 /*组合输入框*/
 .mc-input-group{
 	width: 100%;
+	display: block;
+	height: auto;
 	background-color: #fff;
 }
 .mc-input-text{
