@@ -11,7 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/list.css" />
 	</head>
 
-	<body>
+	<body style="background-color: #00B3E2;">
 		<ui class="mc-list">
 			<li class="mc-list-item disabled">普通显示列表</li>
 			<li class="mc-list-item">item-1</li>
@@ -22,18 +22,54 @@
 		<ui class="mc-list mc-list-icon">
 			<li class="mc-list-item disabled">右侧带箭头</li>
 			<li class="mc-list-item">
-				<a href="#" class="">item-1</a>
+				<a href="#" class="mc-item-icon mc-right">item-1</a>
 			</li>
 			<li class="mc-list-item">
-				<a href="#" class="">item-2</a>
+				<a href="#" class="mc-item-icon mc-right">item-2</a>
 			</li>
 			<li class="mc-list-item">
-				<a href="#" class="">item-3</a>
+				<a href="#" class="mc-item-icon mc-right">item-3</a>
 			</li>
 			<li class="mc-list-item">
-				<a href="#" class="">item-4</a>
+				<a href="#" class="mc-item-icon mc-right">item-4</a>
 			</li>
 		</ui>
+		<ui class="mc-list mc-list-icon">
+			<li class="mc-list-item disabled">右侧箭头朝下</li>
+			<li class="mc-list-item">
+				<a href="#" class="mc-item-icon mc-bottom">item-1</a>
+			</li>
+			<li class="mc-list-item">
+				<a href="#" class="mc-item-icon mc-bottom">item-2</a>
+			</li>
+			<li class="mc-list-item">
+				<a href="#" class="mc-item-icon mc-bottom">item-3</a>
+			</li>
+			<li class="mc-list-item">
+				<a href="#" class="mc-item-icon mc-bottom mc-top">item-4(箭头朝上)</a>
+			</li>
+		</ui>
+		<ui class="mc-list mc-list-icon">
+			<li class="mc-list-item disabled">右侧箭头朝下</li>
+			<li class="mc-list-item">
+				<a href="#" class="mc-item-icon mc-bottom">item-1</a>
+			</li>
+			<li class="mc-list-item">
+				<a href="#" class="mc-item-icon mc-bottom">item-2</a>
+			</li>
+			<li class="mc-list-item">
+				<a href="#" class="mc-item-icon mc-bottom mc-top">item-3(箭头朝上，底部有内容)</a>
+				<div class="mc-collapse-content">
+					<p>1.户主可通过实时账单查询到户主号码的实时话费及明细；成员消费即使话费总额。</p>
+					<p>2.成员只能查询成员本人的费用。</p>
+					<p>3.户主与成员统一账户，故意查询到的实际可用余额一致。</p>
+				</div>
+			</li>
+			<li class="mc-list-item">
+				<a href="#" class="mc-item-icon mc-bottom">item-4</a>
+			</li>
+		</ui>
+		
 		<ui class="mc-list mc-list-streak">
 			<li class="mc-list-item disabled">带条纹</li>
 			<li class="mc-list-item">item-1</li>
@@ -65,14 +101,6 @@
 			<li class="mc-list-item">item-3</li>
 			<li class="mc-list-item">item-4</li>
 		</ui>
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
-		<br />
 	</body>
 
 </html>
