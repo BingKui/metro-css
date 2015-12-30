@@ -9,8 +9,9 @@
 .mc-btn-block-large,
 .mc-btn-ghost{
 	margin: 5px;
-	padding: 5px 10px;
-	font-size: 14px;
+	padding: .5em 1em;
+	font-size: 16px;
+	line-height: 1.2;
 	font-weight: bold;
 	border: none;
 	background-color: #fff;
@@ -24,9 +25,8 @@ input[type=button]{
 	display: inline-block;
 }
 .mc-btn-block{
-	padding-top: 7px;
-	padding-bottom: 7px;
-	font-size: 14px;
+	padding: .5em 0;
+	font-size: 16px;
 }
 /*不同尺寸的按钮*/
 /*.mc-btn-small,
@@ -57,31 +57,28 @@ input[type=button]{
 }
 /*设置普通按钮的大小尺寸*/
 .mc-btn-small{
-	padding-top: 5px;
-	padding-bottom:5px;
-	font-size: 12px;
+	padding: .4em 1em;
+	font-size: 15px;
 }
 .mc-btn-big{
-	padding-top: 9px;
-	padding-bottom: 9px;
-	font-size: 16px;
+	padding: .6em 1em;
+	font-size: 17px;
 }
 .mc-btn-large{
-	padding-top: 11px;
-	padding-bottom: 11px;
+	padding: .7em 1em;
 	font-size: 18px;
 }
 /*设置块级按钮的大小尺寸*/
 .mc-btn-block-small{
-	padding: 3px 5px;
-	font-size: 12px;
+	padding: .4em 1em;
+	font-size: 15px;
 }
 .mc-btn-block-big{
-	padding: 7px 15px;
-	font-size: 16px;
+	padding: .6em 1em;
+	font-size: 17px;
 }
 .mc-btn-block-large{
-	padding: 9px 20px;
+	padding: .7em 1em;
 	font-size: 18px;
 }
 /*幽灵按钮样式*/
@@ -213,4 +210,16 @@ input[type=button]:disabled,
 /*圆角*/
 .mc-btn-round{
 	border-radius: 15px;
+}
+/*设置图标样式*/
+.mc-btn i,
+.mc-btn-block i,
+.mc-btn-small i,
+.mc-btn-big i,
+.mc-btn-large i,
+.mc-btn-block-small i,
+.mc-btn-block-big i,
+.mc-btn-block-large i,
+.mc-btn-ghost i{
+	margin-right: 5px;
 }
