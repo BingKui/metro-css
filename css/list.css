@@ -224,8 +224,8 @@
 /*折叠内容*/
 
 .mc-collapse-content {
-	display: block;
-	padding: 0 20px 10px 23px;
+	display: none;
+	padding: 10px 20px 10px 23px;
 	width: auto;
 	color: #787878;
 }
