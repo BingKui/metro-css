@@ -37,12 +37,16 @@
 	transform: scaleY(.5);
 	background-color: #e8e8e8;
 }
+
 .mc-list .mc-list-item:last-child:after,
 .mc-list .mc-list-item:last-child:before {
 	height: 0
 }
 
+
 /*块级列表*/
+
+
 /*
 .mc-list-block {
 	width: 100%;
@@ -98,6 +102,11 @@
 	background-color: #F9F9F9;
 }
 
+.mc-list .mc-list-item a:hover,
+.mc-list .mc-list-item a:active {
+	background-color: #F9F9F9;
+}
+
 
 /*内容占据整个屏幕的列表*/
 
@@ -124,6 +133,7 @@
 	position: relative;
 	z-index: 2;
 }
+
 .mc-article-list .mc-list-item.disabled,
 .mc-article-list .mc-list-item.disabled:focus,
 .mc-article-list .mc-list-item.disabled:hover {
@@ -132,6 +142,7 @@
 	cursor: default;
 	border: none;
 }
+
 
 /*设置禁用样式*/
 
@@ -142,66 +153,85 @@
 	background-color: #eee;
 	cursor: default;
 }
+
 .mc-list-item.disabled:after,
 .mc-list-item.disabled:before {
 	left: 0;
 }
+
+
 /*设置条纹*/
+
 .mc-list-streak .mc-list-item:after,
 .mc-list-streak .mc-list-item:before,
 .mc-list-icon .mc-list-item:after,
 .mc-list-icon .mc-list-item:before {
 	left: 0;
 }
+
 .mc-list-streak .mc-list-item:nth-child(even) {
 	background-color: #F7F7F9;
 }
 
 
 /*添加右侧图标*/
-.mc-list-icon .mc-list-item .mc-item-icon{
+
+.mc-list-icon .mc-list-item {
+	padding-left: 0;
+}
+
+.mc-list-icon .mc-list-item .mc-item-icon {
 	width: 100%;
 	display: block;
 	height: 100%;
+	text-indent: 15px;
 }
-.mc-list-icon .mc-list-item .mc-item-icon:after{
+
+.mc-list-icon .mc-list-item .mc-item-icon:after {
 	display: inline-block;
-    font: normal normal normal 1.6rem/1 "FontAwesome", sans-serif;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
-    font-size: 20px;
-    position: absolute;
-    color: #D2D6DB;
+	font: normal normal normal 1.6rem/1 "FontAwesome", sans-serif;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+	font-size: 20px;
+	position: absolute;
+	color: #787878;
 }
-.mc-right:after{
+
+.mc-right:after {
 	content: "\f105";
-	right: 45px;
+	right: 30px;
 	top: 8px;
 }
-.mc-bottom:after{
+
+.mc-bottom:after {
 	content: "\f107";
-	right: 45px;
+	right: 30px;
 	top: 8px;
 }
-.mc-top:after{
+
+.mc-top:after {
 	content: "\f106";
-	right: 45px;
+	right: 30px;
 	top: 8px;
 }
+
+
 /*折叠内容*/
-.mc-collapse-content{
+
+.mc-collapse-content {
 	display: block;
 	padding-left: 5px;
 	padding-bottom: 10px;
 	margin-right: 25px;
 	width: auto;
 }
-.mc-collapse-content p{
+
+.mc-collapse-content p {
 	padding: 0;
 	margin: 0;
 	line-height: 24px;
