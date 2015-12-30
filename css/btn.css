@@ -18,7 +18,6 @@
 	cursor: pointer;
 	text-align: center;
 	color: #333;
-	filter:chroma(color=#000000);
 }
 .mc-btn,
 input[type=button]{
@@ -209,7 +208,7 @@ input[type=button]:disabled,
 .mc-btn-large.disabled,
 .mc-btn-block-large.disabled{
 	background-color: #eee;
-	cursor: not-allowed;
+	cursor: default;
 }
 /*圆角*/
 .mc-btn-round{
