@@ -63,11 +63,13 @@ template {
 a {
 	text-decoration: none;
 	color: #333;
+	outline: none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
 }
 
 a:active,
 a:hover {
-	outline: 0;
 	text-decoration: none;
 }
 
@@ -130,6 +132,8 @@ figure {
 
 hr {
 	height: 0;
+	border: none;
+	border-top: 1px solid #e8e8e8;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
@@ -281,8 +285,9 @@ li {
 .mc-btn-block-large,
 .mc-btn-ghost{
 	margin: 5px;
-	padding: 5px 10px;
-	font-size: 14px;
+	padding: .5em 1em;
+	font-size: 16px;
+	line-height: 1.2;
 	font-weight: bold;
 	border: none;
 	background-color: #fff;
@@ -290,16 +295,14 @@ li {
 	cursor: pointer;
 	text-align: center;
 	color: #333;
-	filter:chroma(color=#000000);
 }
 .mc-btn,
 input[type=button]{
 	display: inline-block;
 }
 .mc-btn-block{
-	padding-top: 7px;
-	padding-bottom: 7px;
-	font-size: 14px;
+	padding: .5em 0;
+	font-size: 16px;
 }
 /*不同尺寸的按钮*/
 /*.mc-btn-small,
@@ -330,31 +333,28 @@ input[type=button]{
 }
 /*设置普通按钮的大小尺寸*/
 .mc-btn-small{
-	padding-top: 5px;
-	padding-bottom:5px;
-	font-size: 12px;
+	padding: .4em 1em;
+	font-size: 15px;
 }
 .mc-btn-big{
-	padding-top: 9px;
-	padding-bottom: 9px;
-	font-size: 16px;
+	padding: .6em 1em;
+	font-size: 17px;
 }
 .mc-btn-large{
-	padding-top: 11px;
-	padding-bottom: 11px;
+	padding: .7em 1em;
 	font-size: 18px;
 }
 /*设置块级按钮的大小尺寸*/
 .mc-btn-block-small{
-	padding: 3px 5px;
-	font-size: 12px;
+	padding: .4em 1em;
+	font-size: 15px;
 }
 .mc-btn-block-big{
-	padding: 7px 15px;
-	font-size: 16px;
+	padding: .6em 1em;
+	font-size: 17px;
 }
 .mc-btn-block-large{
-	padding: 9px 20px;
+	padding: .7em 1em;
 	font-size: 18px;
 }
 /*幽灵按钮样式*/
@@ -481,20 +481,34 @@ input[type=button]:disabled,
 .mc-btn-large.disabled,
 .mc-btn-block-large.disabled{
 	background-color: #eee;
-	cursor: not-allowed;
+	cursor: default;
 }
 /*圆角*/
 .mc-btn-round{
 	border-radius: 15px;
 }
+/*设置图标样式*/
+.mc-btn i,
+.mc-btn-block i,
+.mc-btn-small i,
+.mc-btn-big i,
+.mc-btn-large i,
+.mc-btn-block-small i,
+.mc-btn-block-big i,
+.mc-btn-block-large i,
+.mc-btn-ghost i{
+	margin-right: 5px;
+}
+
 .mc-bubble{
-	width: 100px;
+	width: auto;
+	min-width: 150px;
+	max-width: 300px;
 	height: 50px;
 	display: block;
-	margin: 20px;
 	padding: 10px;
 	position: relative;
-	background-color: rgba(6,6,6,.5);
+	background-color: rgba(0,0,0,.4);
 	color: #fff;
 }
 .mc-bubble-top:after,
@@ -510,22 +524,22 @@ input[type=button]:disabled,
 	border-width: 10px;
 }
 .mc-bubble-top:after{
-	border-top-color: rgba(6,6,6,.5);
+	border-top-color: rgba(0,0,0,.4);
 	left: 10px;
 	bottom: -20px;
 }
 .mc-bubble-bottom:after{
-	border-bottom-color: rgba(6,6,6,.5);
+	border-bottom-color: rgba(0,0,0,.4);
 	left: 10px;
 	top: -20px;
 }
 .mc-bubble-left:after{
-	border-left-color: rgba(6,6,6,.5);
+	border-left-color: rgba(0,0,0,.4);
 	right: -20px;
 	top: 10px;
 }
 .mc-bubble-right:after{
-	border-right-color: rgba(6,6,6,.5);
+	border-right-color: rgba(0,0,0,.4);
 	left: -20px;
 	top: 10px;
 }
@@ -2792,6 +2806,8 @@ input,textarea{border:0;-webkit-appearance: none;}
 /*组合输入框*/
 .mc-input-group{
 	width: 100%;
+	display: block;
+	height: auto;
 	background-color: #fff;
 }
 .mc-input-text{
@@ -2816,7 +2832,8 @@ input,textarea{border:0;-webkit-appearance: none;}
 
 /*普通列表样式ul li*/
 
-.mc-list {
+.mc-list,
+.mc-article-list {
 	width: auto;
 	display: block;
 	overflow: hidden;
@@ -2826,6 +2843,7 @@ input,textarea{border:0;-webkit-appearance: none;}
 	margin-bottom: 10px;
 	margin-top: 10px;
 	position: relative;
+	background-color: #fff;
 }
 
 .mc-list .mc-list-item {
@@ -2833,14 +2851,14 @@ input,textarea{border:0;-webkit-appearance: none;}
 	min-height: 40px;
 	width: 100%;
 	line-height: 40px;
-	font-size: 14px;
+	font-size: 16px;
 	position: relative;
 	overflow: hidden;
 	padding: 0 15px;
 	-webkit-touch-callout: none
 }
 
-.mc-list .mc-list-item:after {
+.mc-list .mc-list-item:before {
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -2851,13 +2869,17 @@ input,textarea{border:0;-webkit-appearance: none;}
 	transform: scaleY(.5);
 	background-color: #e8e8e8;
 }
+
 .mc-list .mc-list-item:last-child:after,
 .mc-list .mc-list-item:last-child:before {
 	height: 0
 }
 
+
 /*块级列表*/
 
+
+/*
 .mc-list-block {
 	width: 100%;
 	display: block;
@@ -2899,7 +2921,7 @@ input,textarea{border:0;-webkit-appearance: none;}
 
 .mc-list-item.mc-w-100 {
 	width: 100%;
-}
+}*/
 
 
 /*带链接的列表*/
@@ -2909,6 +2931,11 @@ input,textarea{border:0;-webkit-appearance: none;}
 }
 
 .mc-list a.mc-list-item:hover {
+	background-color: #F9F9F9;
+}
+
+.mc-list .mc-list-item a:hover,
+.mc-list .mc-list-item a:active {
 	background-color: #F9F9F9;
 }
 
@@ -2938,6 +2965,7 @@ input,textarea{border:0;-webkit-appearance: none;}
 	position: relative;
 	z-index: 2;
 }
+
 .mc-article-list .mc-list-item.disabled,
 .mc-article-list .mc-list-item.disabled:focus,
 .mc-article-list .mc-list-item.disabled:hover {
@@ -2946,6 +2974,7 @@ input,textarea{border:0;-webkit-appearance: none;}
 	cursor: default;
 	border: none;
 }
+
 
 /*设置禁用样式*/
 
@@ -2956,44 +2985,89 @@ input,textarea{border:0;-webkit-appearance: none;}
 	background-color: #eee;
 	cursor: default;
 }
+
 .mc-list-item.disabled:after,
 .mc-list-item.disabled:before {
 	left: 0;
 }
+
+
 /*设置条纹*/
+
 .mc-list-streak .mc-list-item:after,
-.mc-list-streak .mc-list-item:before {
+.mc-list-streak .mc-list-item:before,
+.mc-list-icon .mc-list-item:after,
+.mc-list-icon .mc-list-item:before {
 	left: 0;
 }
+
 .mc-list-streak .mc-list-item:nth-child(even) {
 	background-color: #F7F7F9;
 }
 
 
 /*添加右侧图标*/
-.mc-list-icon .mc-list-item a{
+
+.mc-list-icon .mc-list-item {
+	padding-left: 0;
+}
+
+.mc-list-icon .mc-list-item .mc-item-icon {
 	width: 100%;
 	display: block;
 	height: 100%;
-}
-.mc-list-icon .mc-list-item a:after{
-	display: inline-block;
-    font: normal normal normal 1.6rem/1 "FontAwesome", sans-serif;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
-	content: "\f105";
-	font-size: 20px;
-	position: absolute;
-	right: 45px;
-	top: 8px;
-	color: #D2D6DB;
+	text-indent: 15px;
 }
 
+.mc-list-icon .mc-list-item .mc-item-icon:after {
+	display: inline-block;
+	font: normal normal normal 1.6rem/1 "FontAwesome", sans-serif;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+	font-size: 20px;
+	position: absolute;
+	color: #787878;
+}
+
+.mc-right:after {
+	content: "\f105";
+	right: 30px;
+	top: 8px;
+}
+
+.mc-bottom:after {
+	content: "\f107";
+	right: 30px;
+	top: 8px;
+}
+
+.mc-top:after {
+	content: "\f106";
+	right: 30px;
+	top: 8px;
+}
+
+
+/*折叠内容*/
+
+.mc-collapse-content {
+	display: none;
+	padding: 10px 20px 10px 23px;
+	width: auto;
+	color: #787878;
+}
+
+.mc-collapse-content p {
+	padding: 0;
+	margin: 0;
+	line-height: 24px;
+	font-size: 13px;
+}
 /*方块加载*/
 
 .mc-load-block {
@@ -3300,6 +3374,20 @@ input,textarea{border:0;-webkit-appearance: none;}
 /*危险danger*/
 .mc-danger{
 	color: #D9534F;
+}
+/*标题*/
+.mc-ut-title{
+	width: 100%;
+	display: inline-block;
+	height: 40px;
+	font-size: 20px;
+	line-height: 40px;
+	color: #777;
+	background-color: #eee;
+	cursor: default;
+	border: 1px solid #e8ee8;
+	border-left: none;
+	border-right: none;
 }
 
 .mc-media{
@@ -3665,6 +3753,7 @@ input,textarea{border:0;-webkit-appearance: none;}
 	border-width: 10px;
 	top: 10px;
 }
+
 hr{
 	height: 2px;
 	border: none;
