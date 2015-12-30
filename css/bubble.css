@@ -1,11 +1,12 @@
 .mc-bubble{
-	width: 100px;
+	width: auto;
+	min-width: 150px;
+	max-width: 300px;
 	height: 50px;
 	display: block;
-	margin: 20px;
 	padding: 10px;
 	position: relative;
-	background-color: rgba(6,6,6,.5);
+	background-color: rgba(0,0,0,.4);
 	color: #fff;
 }
 .mc-bubble-top:after,
@@ -21,22 +22,22 @@
 	border-width: 10px;
 }
 .mc-bubble-top:after{
-	border-top-color: rgba(6,6,6,.5);
+	border-top-color: rgba(0,0,0,.4);
 	left: 10px;
 	bottom: -20px;
 }
 .mc-bubble-bottom:after{
-	border-bottom-color: rgba(6,6,6,.5);
+	border-bottom-color: rgba(0,0,0,.4);
 	left: 10px;
 	top: -20px;
 }
 .mc-bubble-left:after{
-	border-left-color: rgba(6,6,6,.5);
+	border-left-color: rgba(0,0,0,.4);
 	right: -20px;
 	top: 10px;
 }
 .mc-bubble-right:after{
-	border-right-color: rgba(6,6,6,.5);
+	border-right-color: rgba(0,0,0,.4);
 	left: -20px;
 	top: 10px;
 }
