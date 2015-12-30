@@ -225,9 +225,7 @@
 
 .mc-collapse-content {
 	display: block;
-	padding-left: 5px;
-	padding-bottom: 10px;
-	margin-right: 25px;
+	padding: 0 20px 10px 23px;
 	width: auto;
 }
 
