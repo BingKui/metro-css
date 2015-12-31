@@ -4,6 +4,7 @@
 	height: auto;
 	overflow: hidden;
 	margin-bottom: 10px;
+	position: relative;
 	border-bottom: 1px solid #e8e8e8;
 }
 .mc-panel.mc-no-border{
