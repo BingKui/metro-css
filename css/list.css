@@ -15,16 +15,34 @@
 
 .mc-list .mc-list-item {
 	display: block;
-	min-height: 40px;
+	min-height: 42px;
 	width: 100%;
-	line-height: 40px;
+	line-height: 42px;
 	font-size: 16px;
 	position: relative;
 	overflow: hidden;
 	padding: 0 15px;
 	-webkit-touch-callout: none
 }
-
+.mc-list .mc-media{
+	line-height: 21px;
+	padding: 11px 15px;
+	text-indent: 0;
+}
+.mc-list .mc-media.mc-item-icon{
+	padding-right: 35px;
+}
+.mc-list-media .mc-list-item{
+	position: relative;
+	padding: 11px 15px;
+	line-height: 21px;
+	box-sizing: border-box;
+    -webkit-user-select: none;
+    outline: 0;
+}
+.mc-icon-list.mc-list-media .mc-list-item{
+	padding: 0 15px;
+}
 .mc-list .mc-list-item:before {
 	position: absolute;
 	right: 0;
@@ -163,11 +181,12 @@
 
 .mc-list-streak .mc-list-item:after,
 .mc-list-streak .mc-list-item:before,
-.mc-list-icon .mc-list-item:after,
 .mc-list-icon .mc-list-item:before {
 	left: 0;
 }
-
+.mc-list-icon .mc-media:before{
+	left: 15px;
+}
 .mc-list-streak .mc-list-item:nth-child(even) {
 	background-color: #F7F7F9;
 }
@@ -175,18 +194,7 @@
 
 /*添加右侧图标*/
 
-.mc-list-icon .mc-list-item {
-	padding-left: 0;
-}
-
-.mc-list-icon .mc-list-item .mc-item-icon {
-	width: 100%;
-	display: block;
-	height: 100%;
-	text-indent: 15px;
-}
-
-.mc-list-icon .mc-list-item .mc-item-icon:after {
+.mc-list-icon .mc-item-icon:after {
 	display: inline-block;
 	font: normal normal normal 1.6rem/1 "FontAwesome", sans-serif;
 	font-size: inherit;
@@ -197,28 +205,29 @@
 	-ms-transform: translate(0, 0);
 	transform: translate(0, 0);
 	font-size: 20px;
+	right: 45px;
 	position: absolute;
 	color: #787878;
 }
 
 .mc-right:after {
 	content: "\f105";
-	right: 30px;
-	top: 8px;
+	margin-top: 11px;
 }
 
 .mc-bottom:after {
 	content: "\f107";
-	right: 30px;
-	top: 8px;
+	margin-top: 11px;
 }
 
 .mc-top:after {
 	content: "\f106";
-	right: 30px;
-	top: 8px;
+	margin-top: 11px;
 }
-
+.mc-list-media .mc-item-icon:after{
+	right: 15px;
+	margin-top: -33px;
+}
 
 /*折叠内容*/
 
