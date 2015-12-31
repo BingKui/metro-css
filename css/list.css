@@ -193,7 +193,13 @@
 
 
 /*添加右侧图标*/
-
+.mc-list-icon .mc-list-item .mc-item-icon {
+	width: 100%;
+	display: block;
+	height: 100%;
+	margin-left: -15px;
+	text-indent: 15px;
+}
 .mc-list-icon .mc-item-icon:after {
 	display: inline-block;
 	font: normal normal normal 1.6rem/1 "FontAwesome", sans-serif;
