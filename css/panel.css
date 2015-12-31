@@ -1,10 +1,10 @@
 .mc-panel{
 	display: block;
-	width: 95%;
+	width: 100%;
 	height: auto;
 	overflow: hidden;
-	margin: 10px auto;
-	border: 1px solid #44abe5;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #e8e8e8;
 }
 .mc-panel.mc-no-border{
 	border: none;
@@ -12,12 +12,14 @@
 .mc-panel-title{
 	display: block;
 	width: auto;
-	border-bottom: 1px solid #44abe5;
-	font-size: 18px;
-    color: #fff;
-    background-color: #44abe5;
-    margin: 0;
-    padding: 6px 10px;
+	height: 42px;
+	font-size: 16px;
+	line-height: 42px;
+	text-indent: 15px;
+    color: #777;
+    background-color: #eee;
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
 }
 .mc-no-border .mc-panel-title{
 	border-bottom: none;
@@ -26,5 +28,5 @@
 	display: block;
 	height: auto;
 	width: auto;
-	padding: 10px;
+	padding:10px 15px;
 }
