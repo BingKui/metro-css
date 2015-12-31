@@ -29,5 +29,6 @@
 	display: block;
 	height: auto;
 	width: auto;
+	position: relative;
 	padding:10px 15px;
 }
