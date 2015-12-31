@@ -5,74 +5,165 @@
 		<meta charset="utf-8">
 		<title>列表</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<link rel="stylesheet" type="text/css" href="../lib/Metro-css/0.0.1/MetroCss.min.css"/>
-		<link rel="stylesheet" type="text/css" href="../lib/MaterialMenu/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../lib/Metro-css/0.0.1/MetroCss.min.css" />
+		<link rel="stylesheet" type="text/css" href="../lib/MaterialMenu/css/style.css" />
 	</head>
 
 	<body>
 		<div id="wrapper" class="wrapper" style="margin-top: 60px;">
-		<h1>普通列表</h1>
-		<div class="w-350">
-			<div class="box">
-				<ui class="mc-list">
-					<li class="mc-list-item disabled">Morbi leo risus</li>
-					<li class="mc-list-item">Morbi leo risus</li>
-					<li class="mc-list-item">Morbi leo risus</li>
-					<li class="mc-list-item">Morbi leo risus</li>
-					<li class="mc-list-item">Morbi leo risus</li>
-					<li class="mc-list-item">Morbi leo risus</li>
-				</ui>
-			</div>
-		</div>
-		<h1>条纹样式</h1>
-		<div class="w-350">
-			<div class="box">
-				<ui class="mc-list mc-list-streak">
-					<li class="mc-list-item">Morbi leo risus</li>
-					<li class="mc-list-item">Morbi leo risus</li>
-					<li class="mc-list-item">Morbi leo risus</li>
-					<li class="mc-list-item">Morbi leo risus</li>
-					<li class="mc-list-item">Morbi leo risus</li>
-					<li class="mc-list-item">Morbi leo risus</li>
-				</ui>
-			</div>
-		</div>
-		<h1>块状列表</h1>
-		<div class="w-350">
-			<div class="box">
-				<ui class="mc-list-block">
-					<li class="mc-list-item">Morbi leo risus</li>
-					<li class="mc-list-item">Morbi leo risus</li>
-					<li class="mc-list-item">Morbi leo risus</li>
-					<li class="mc-list-item">Morbi leo risus</li>
-					<li class="mc-list-item">Morbi leo risus</li>
-					<li class="mc-list-item">Morbi leo risus</li>
-					<li class="mc-list-item mc-w-100">Morbi leo risus</li>
-				</ui>
-			</div>
-		</div>
-		<h1>带点击效果的列表</h1>
-		<div class="w-350">
-			<div class="box">
-				<ui class="mc-list">
-					<a href="" class="mc-list-item disabled">11</a>
-					<a href="" class="mc-list-item">22</a>
-					<a href="" class="mc-list-item">33</a>
-					<a href="" class="mc-list-item">44</a>
-					<a href="" class="mc-list-item">55</a>
-				</ui>
-			</div>
-		</div>
-		<h1>列表信息</h1>
-		<div class="w-350">
-			<ui class="mc-article-list">
-				<li href="" class="mc-list-item">11</li>
-				<li href="" class="mc-list-item">11</li>
-				<li href="" class="mc-list-item">11</li>
-				<li href="" class="mc-list-item">11</li>
-			</ui>
-		</div>
-		<br />
+			<ul class="mc-list">
+				<li class="mc-list-item disabled">普通显示列表</li>
+				<li class="mc-list-item">item-1</li>
+				<li class="mc-list-item">item-2</li>
+				<li class="mc-list-item">item-3</li>
+				<li class="mc-list-item">item-4</li>
+			</ul>
+			<ul class="mc-list mc-list-media">
+				<li class="mc-list-item disabled">媒体列表--头像在左边</li>
+				<li class="mc-list-item mc-media">
+					<img class="media-img" src="../img/1.jpg" alt="图像">
+					<div class="mc-media-body">
+						<span class="mc-media-title">康兵奎</span>
+						<div class="mc-media-content">客观、专业、权威!互动百科是网络百科全书,是全球最大中文百科网及百科全书。</div>
+					</div>
+				</li>
+				<li class="mc-list-item mc-media">
+					<img class="media-img" src="../img/1.jpg" alt="图像">
+					<div class="mc-media-body">
+						<span class="mc-media-title">康兵奎</span>
+						<div class="mc-media-content">客观、专业、权威!互动百科是网络百科全书,是全球最大中文百科网及百科全书。</div>
+					</div>
+				</li>
+				<li class="mc-list-item mc-media">
+					<img class="media-img" src="../img/1.jpg" alt="图像">
+					<div class="mc-media-body">
+						<span class="mc-media-title">康兵奎</span>
+						<div class="mc-media-content">客观、专业、权威!互动百科是网络百科全书,是全球最大中文百科网及百科全书。</div>
+					</div>
+				</li>
+			</ul>
+			<ul class="mc-list mc-list-media">
+				<li class="mc-list-item disabled">媒体列表--头像在右边</li>
+				<li class="mc-list-item mc-media  mc-media-right">
+					<img class="media-img" src="../img/1.jpg" alt="图像">
+					<div class="mc-media-body">
+						<span class="mc-media-title">康兵奎</span>
+						<div class="mc-media-content">客观、专业、权威!互动百科是网络百科全书,是全球最大中文百科网及百科全书。</div>
+					</div>
+				</li>
+				<li class="mc-list-item mc-media  mc-media-right">
+					<img class="media-img" src="../img/1.jpg" alt="图像">
+					<div class="mc-media-body">
+						<span class="mc-media-title">康兵奎</span>
+						<div class="mc-media-content">客观、专业、权威!互动百科是网络百科全书,是全球最大中文百科网及百科全书。</div>
+					</div>
+				</li>
+				<li class="mc-list-item mc-media  mc-media-right">
+					<img class="media-img" src="../img/1.jpg" alt="图像">
+					<div class="mc-media-body">
+						<span class="mc-media-title">康兵奎</span>
+						<div class="mc-media-content">客观、专业、权威!互动百科是网络百科全书,是全球最大中文百科网及百科全书。</div>
+					</div>
+				</li>
+			</ul>
+
+			<ul class="mc-list mc-list-icon mc-list-media">
+				<li class="mc-list-item disabled">右侧带箭头</li>
+				<a href="#" class="mc-list-item mc-media mc-item-icon mc-right">
+					<img class="media-img" src="../img/1.jpg" alt="图像">
+					<div class="mc-media-body">
+						<span class="mc-media-title">康兵奎</span>
+						<div class="mc-media-content">客观、专业、权威!互动百科是网络百科全书,是全球最大中文百科网及百科全书。</div>
+					</div>
+				</a>
+				<a href="#" class="mc-list-item mc-media mc-item-icon mc-right">
+					<img class="media-img" src="../img/1.jpg" alt="图像">
+					<div class="mc-media-body">
+						<span class="mc-media-title">康兵奎</span>
+						<div class="mc-media-content">客观、专业、权威!互动百科是网络百科全书,是全球最大中文百科网及百科全书。</div>
+					</div>
+				</a>
+				<a href="#" class="mc-list-item mc-media mc-item-icon mc-right">
+					<img class="media-img" src="../img/1.jpg" alt="图像">
+					<div class="mc-media-body">
+						<span class="mc-media-title">康兵奎</span>
+						<div class="mc-media-content">客观、专业、权威!互动百科是网络百科全书,是全球最大中文百科网及百科全书。</div>
+					</div>
+				</a>
+			</ul>
+
+			<ul class="mc-list mc-list-icon">
+				<li class="mc-list-item disabled">右侧带箭头</li>
+				<li class="mc-list-item">
+					<a href="#" class="mc-item-icon mc-right">item-1</a>
+				</li>
+				<li class="mc-list-item">
+					<a href="#" class="mc-item-icon mc-right">item-2</a>
+				</li>
+				<li class="mc-list-item">
+					<a href="#" class="mc-item-icon mc-right">item-3</a>
+				</li>
+				<li class="mc-list-item">
+					<a href="#" class="mc-item-icon mc-right">item-4</a>
+				</li>
+			</ul>
+			<ul class="mc-list mc-list-icon">
+				<li class="mc-list-item disabled">右侧箭头朝下</li>
+				<li class="mc-list-item">
+					<a href="#" class="mc-item-icon mc-bottom">item-1</a>
+				</li>
+				<li class="mc-list-item">
+					<a href="#" class="mc-item-icon mc-bottom">item-2</a>
+				</li>
+				<li class="mc-list-item">
+					<a href="#" class="mc-item-icon mc-bottom">item-3</a>
+				</li>
+				<li class="mc-list-item">
+					<a href="#" class="mc-item-icon mc-bottom mc-top">item-4(箭头朝上)</a>
+				</li>
+			</ul>
+			<ul class="mc-list mc-list-icon">
+				<li class="mc-list-item disabled">右侧箭头朝下</li>
+				<li class="mc-list-item">
+					<a href="#" class="mc-item-icon mc-bottom">item-1</a>
+				</li>
+				<li class="mc-list-item">
+					<a href="#" class="mc-item-icon mc-bottom">item-2</a>
+				</li>
+				<li class="mc-list-item">
+					<a href="#" class="mc-item-icon mc-bottom mc-top">item-3(箭头朝上)</a>
+					<div class="mc-collapse-content" style="display: block;">
+						<p>1.户主可通过实时账单查询到户主号码的实时话费及明细；成员消费即使话费总额。</p>
+						<p>2.成员只能查询成员本人的费用。</p>
+						<p>3.户主与成员统一账户，故意查询到的实际可用余额一致。</p>
+					</div>
+				</li>
+				<li class="mc-list-item">
+					<a href="#" class="mc-item-icon mc-bottom">item-4</a>
+				</li>
+			</ul>
+
+			<ul class="mc-list mc-list-streak">
+				<li class="mc-list-item disabled">带条纹</li>
+				<li class="mc-list-item">item-1</li>
+				<li class="mc-list-item">item-2</li>
+				<li class="mc-list-item">item-3</li>
+				<li class="mc-list-item">item-4</li>
+			</ul>
+			<ul class="mc-list">
+				<li class="mc-list-item disabled">带点击效果的列表</li>
+				<a href="#" class="mc-list-item">item-1</a>
+				<a href="#" class="mc-list-item">item-2</a>
+				<a href="#" class="mc-list-item">item-3</a>
+				<a href="#" class="mc-list-item">item-4</a>
+			</ul>
+			<ul class="mc-article-list">
+				<li class="mc-list-item disabled">列表信息</li>
+				<li class="mc-list-item">item-1</li>
+				<li class="mc-list-item">item-2</li>
+				<li class="mc-list-item">item-3</li>
+				<li class="mc-list-item">item-4</li>
+			</ul>
 		</div>
 		<!--菜单-->
 		<button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button>
