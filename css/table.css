@@ -1,9 +1,9 @@
 .mc-table {
 	color: #333333;
 	border-collapse: collapse;
-	width: 75%;
-	margin: 0 auto;
-	border: 1px solid #83D1F5;
+	width: 95%;
+	margin: 10px auto;
+	border: 1px solid #e8e8e8;
 }
 .mc-table thead th,
 .mc-table tbody td,
@@ -11,15 +11,15 @@
 	border-width: 1px;
 	padding: 8px;
 	border-style: solid;
-	border-color: #83D1F5;
+	border-color: #e8e8e8;
 	font-size: 12px;
 }
 .mc-table thead th{
 	font-size: 14px;
 	text-align: left;
 	border: none;
-	background-color: #83D1F5;
-	color: #fff;
+	background-color: #eee;
+	color: #777;
 }
 .mc-table tfoot td{
 	font-size: 14px;
