@@ -266,9 +266,9 @@
 	text-align: center;
 	display: block;
     font-size: 24px;
-    color: inherit;
+    color: #333;
     font-family: inherit;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 1.1;
 }
 .mc-people-img{
