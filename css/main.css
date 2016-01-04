@@ -61,7 +61,7 @@
 }
 /*成功success*/
 .mc-success{
-	color: #5CB85C;
+	color: #34B434;
 }
 /*信息info*/
 .mc-info{
@@ -74,6 +74,31 @@
 /*危险danger*/
 .mc-danger{
 	color: #D9534F;
+}
+/*推荐项primary*/
+.mc-primary-bg{
+	background-color: #337AB7;
+	color: #fff;
+}
+/*成功success*/
+.mc-success-bg{
+	background-color: #34B434;
+	color: #fff;
+}
+/*信息info*/
+.mc-info-bg{
+	background-color: #5BC0DE;
+	color: #fff;
+}
+/*警告warning*/
+.mc-warning-bg{
+	background-color: #F0AD4E;
+	color: #fff;
+}
+/*危险danger*/
+.mc-danger-bg{
+	background-color: #D9534F;
+	color: #fff;
 }
 /*标题*/
 .mc-ut-title{
@@ -90,3 +115,37 @@
 	border-right: none;
 	text-indent: 15px;
 }
+/*公用图标*/
+/*.mc-tip-primary:before,
+.mc-tip-success:before,
+.mc-tip-info:before,
+.mc-tip-warning:before,
+.mc-tip-danger:before{
+	display: inline-block;
+	font: normal normal normal 1.6rem/1 "FontAwesome", sans-serif;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+	font-size: 20px;
+	top:2px;
+	position: relative;
+}
+.mc-tip-primary:before{
+	content: "\f004";
+}
+.mc-tip-success:before{
+	content: "\f05d";
+}
+.mc-tip-info:before{
+	content: "\f05a";
+}
+.mc-tip-warning:before{
+	content: "\f071";
+}
+.mc-tip-danger:before{
+	content: "\f00d";
+}*/
