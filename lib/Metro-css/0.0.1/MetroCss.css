@@ -3212,6 +3212,7 @@ input,textarea{border:0;-webkit-appearance: none;}
 	display: block;
 	width: 100%;
 	background-color: #fff;
+	padding-bottom: 20px;
 }
 .mc-people-list .mc-list-item{
 	width: 100%;
