@@ -2,6 +2,7 @@
 	height: auto;
 	background-color: #32374d;
 	min-height: 70px;
+	padding-top: 30px;
 }
 /*footer顶部logo*/
 .mc-footer-img{
@@ -9,7 +10,6 @@
 	height: 60px;
 	display: block;
 	margin: 0 auto;
-	padding-top: 30px;
 }
 /*footer内容*/
 .mc-footer-content{
