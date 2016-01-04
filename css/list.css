@@ -250,3 +250,45 @@
 	line-height: 24px;
 	font-size: 13px;
 }
+/*人物信息展示列表*/
+.mc-people-list{
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	padding-bottom: 20px;
+}
+.mc-people-list .mc-list-item{
+	width: 100%;
+	margin-top: 5px;
+}
+.mc-people-list .mc-list-title{
+	padding: 15px 0;
+	text-align: center;
+	display: block;
+    font-size: 24px;
+    color: inherit;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+}
+.mc-people-img{
+	display: block;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.mc-people-info{
+	width: 100%;
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	font-size: 16px;
+	color: #333;
+	text-align: center;
+	margin-top: 5px;
+}
+.mc-people-info:last-child{
+	margin: 0;
+	color: rgba(0, 0, 0, 0.6);
+}
