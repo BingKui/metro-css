@@ -1,0 +1,128 @@
+.mc-switch,
+.mc-switch-content{
+	width: 53px;
+	height: 32px;
+	position: relative;
+	border: 1px solid #dfdfdf;
+	background-color: #fdfdfd;
+	border-radius: 50%;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	border-bottom-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+	display: inline-block;
+	-webkit-appearance: none;
+	-webkit-user-select: none;
+	outline: none;
+}
+/*带提示的开关*/
+.mc-switch-content{
+	width: 73px;
+}
+.mc-switch:before,
+.mc-switch-content:before,
+.mc-switch-content:after,
+.mc-switch-content:checked:after{
+	content: '';
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	outline: none;
+	border-radius: 16px;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	border-bottom-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+	background-color: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+.mc-switch-content:after,
+.mc-switch-content:checked:after{
+	width: 40px;
+	line-height: 32px;
+	font-size: 13px;
+	box-shadow: none;
+	font-weight: bold;
+	background-color: transparent;
+}
+.mc-switch-content:after{
+	content: "OFF";
+	color: #787878;
+	text-indent: 5px;
+	left: 31px;
+}
+.mc-switch-content:checked:after{
+	content: "ON";
+	color: #fff;
+	left: 0;
+	text-indent: 12px;
+}
+
+.mc-switch:checked,
+.mc-switch-content:checked {
+	border-color: #64bd63;
+	box-shadow: #64bd63 0 0 0 16px inset;
+	background-color: #64bd63;
+}
+
+.mc-switch:checked:before{
+	left: 21px;
+}
+.mc-switch-content:checked:before{
+	left: 41px;
+}
+/*简单过滤效果*/
+.mc-switch.mc-switch-animbg,
+.mc-switch-content.mc-switch-animbg{
+	transition: background-color ease 0.4s;
+}
+
+.mc-switch.mc-switch-animbg:before,
+.mc-switch-content.mc-switch-animbg:before{
+	transition: left 0.3s;
+}
+
+.mc-switch.mc-switch-animbg:checked,
+.mc-switch-content.mc-switch-animbg:checked {
+	box-shadow: #dfdfdf 0 0 0 0 inset;
+	background-color: #64bd63;
+	transition: border-color 0.4s, background-color ease 0.4s;
+}
+
+.mc-switch.mc-switch-animbg:checked:before,
+.mc-switch-content.mc-switch-animbg:checked:before {
+	transition: left 0.3s;
+}
+/*过滤效果*/
+.mc-switch.mc-switch-anim,
+.mc-switch-content.mc-switch-anim {
+	transition: border cubic-bezier(0, 0, 0, 1) 0.4s, box-shadow cubic-bezier(0, 0, 0, 1) 0.4s;
+}
+
+.mc-switch.mc-switch-anim:before,
+.mc-switch-content.mc-switch-anim:before {
+	transition: left 0.3s;
+}
+
+.mc-switch.mc-switch-anim:checked,
+.mc-switch-content.mc-switch-anim:checked {
+	box-shadow: #64bd63 0 0 0 16px inset;
+	background-color: #64bd63;
+	transition: border ease 0.4s, box-shadow ease 0.4s, background-color ease 1.2s;
+}
+
+.mc-switch.mc-switch-anim:checked:before,
+.mc-switch-content.mc-switch-anim:checked:before {
+	transition: left 0.3s;
+}
+/*设开关在列表中的显示位置*/
+.mc-list-item .mc-switch,
+.mc-list-item .mc-switch-content{
+	position: relative;
+	float: right;
+	display: block;
+	top: 5px;
+	right: 30px;
+}
