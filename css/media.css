@@ -86,7 +86,367 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
-/*圆形头像*/
-.mc-roundicon{
-	
+/*图片轮播*/
+.mc-img-carousel{
+	width: 100%;
+	height: 150px;
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+.mc-img-group{
+	width: 500%;
+	height: 150px;
+	position: absolute;
+	left: 0px;
+	top: 0;
+	z-index: 9;
+	animation: myfirst 22.5s infinite;
+	-webkit-animation: myfirst 22.5s infinite;
+	-0-animation: myfirst 22.5s infinite;
+	-moz-animation: myfirst 22.5s infinite;
+}
+.mc-img-group li{
+	height: 150px;
+	width: 20%;
+	display: block;
+	float: left;
+}
+.mc-img-group li img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.mc-img-item{
+	width: auto;
+	height: 10px;
+	z-index: 19;
+	position: absolute;
+	left: 50%;
+	bottom: 5px;
+	margin-left: -45px;
+}
+.mc-img-item-list{
+	width: 90px;
+	height: 10px;
+	position: relative;
+}
+
+.mc-img-item-list li {
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background: #ffffff;
+	opacity: 0.5;
+	text-align: center;
+	color: #333333;
+	float: left;
+	margin-left: 10px;
+	position: relative;
+	z-index: 20;
+	text-align: center;
+}
+.mc-img-item-list li:first-child,
+.mc-img-item-list li:last-child{
+	margin-left: 0;
+}
+.mc-img-item-list #lp {
+	position: absolute;
+	left: 0px;
+	top: 0;
+	background: #ff3c00;
+	opacity: 1;
+	z-index: 21;
+	animation: myfirstArr 22.5s infinite;
+	-webkit-animation: myfirstArr 22.5s infinite;
+	-moz-animation: myfirstArr 22.5s infinite;
+	-o-animation: myfirstArr 22.5s infinite;
+}
+
+@keyframes myfirst {
+	0% {
+		left: 0px;
+	}
+	18% {
+		left: 0px;
+	}
+	20% {
+		left: -100%;
+	}
+	38% {
+		left: -100%;
+	}
+	40% {
+		left: -200%;
+	}
+	58% {
+		left: -200%;
+	}
+	60% {
+		left: -300%;
+	}
+	78% {
+		left: -300%;
+	}
+	80% {
+		left: -400%;
+	}
+	98% {
+		left: -400%;
+	}
+	100% {
+		left: -0px;
+	}
+}
+
+@-o-keyframes myfirst {
+	0% {
+		left: 0px;
+	}
+	18% {
+		left: 0px;
+	}
+	20% {
+		left: -100%;
+	}
+	38% {
+		left: -100%;
+	}
+	40% {
+		left: -200%;
+	}
+	58% {
+		left: -200%;
+	}
+	60% {
+		left: -300%;
+	}
+	78% {
+		left: -300%;
+	}
+	80% {
+		left: -400%;
+	}
+	98% {
+		left: -400%;
+	}
+	100% {
+		left: -0px;
+	}
+}
+
+@-moz-keyframes myfirst {
+	0% {
+		left: 0px;
+	}
+	18% {
+		left: 0px;
+	}
+	20% {
+		left: -100%;
+	}
+	38% {
+		left: -100%;
+	}
+	40% {
+		left: -200%;
+	}
+	58% {
+		left: -200%;
+	}
+	60% {
+		left: -300%;
+	}
+	78% {
+		left: -300%;
+	}
+	80% {
+		left: -400%;
+	}
+	98% {
+		left: -400%;
+	}
+	100% {
+		left: -0px;
+	}
+}
+
+@-webkit-keyframes myfirst {
+	0% {
+		left: 0px;
+	}
+	18% {
+		left: 0px;
+	}
+	20% {
+		left: -100%;
+	}
+	38% {
+		left: -100%;
+	}
+	40% {
+		left: -200%;
+	}
+	58% {
+		left: -200%;
+	}
+	60% {
+		left: -300%;
+	}
+	78% {
+		left: -300%;
+	}
+	80% {
+		left: -400%;
+	}
+	98% {
+		left: -400%;
+	}
+	100% {
+		left: -0px;
+	}
+}
+
+@keyframes myfirstArr {
+	0% {
+		left: 0px;
+	}
+	19% {
+		left: 0px;
+	}
+	20% {
+		left: 20px;
+	}
+	39% {
+		left: 20px;
+	}
+	40% {
+		left: 40px;
+	}
+	59% {
+		left: 40px;
+	}
+	60% {
+		left: 60px;
+	}
+	79% {
+		left: 60px;
+	}
+	80% {
+		left: 80px;
+	}
+	99% {
+		left: 80px;
+	}
+	100% {
+		left: 0px;
+	}
+}
+
+@-webkit-keyframes myfirstArr {
+	0% {
+		left: 0px;
+	}
+	19% {
+		left: 0px;
+	}
+	20% {
+		left: 20px;
+	}
+	39% {
+		left: 20px;
+	}
+	40% {
+		left: 40px;
+	}
+	59% {
+		left: 40px;
+	}
+	60% {
+		left: 60px;
+	}
+	79% {
+		left: 60px;
+	}
+	80% {
+		left: 80px;
+	}
+	99% {
+		left: 80px;
+	}
+	100% {
+		left: 0px;
+	}
+}
+
+@-moz-keyframes myfirstArr {
+	0% {
+		left: 0px;
+	}
+	19% {
+		left: 0px;
+	}
+	20% {
+		left: 20px;
+	}
+	39% {
+		left: 20px;
+	}
+	40% {
+		left: 40px;
+	}
+	59% {
+		left: 40px;
+	}
+	60% {
+		left: 60px;
+	}
+	79% {
+		left: 60px;
+	}
+	80% {
+		left: 80px;
+	}
+	99% {
+		left: 80px;
+	}
+	100% {
+		left: 0px;
+	}
+}
+
+@-o-keyframes myfirstArr {
+	0% {
+		left: 0px;
+	}
+	19% {
+		left: 0px;
+	}
+	20% {
+		left: 20px;
+	}
+	39% {
+		left: 20px;
+	}
+	40% {
+		left: 40px;
+	}
+	59% {
+		left: 40px;
+	}
+	60% {
+		left: 60px;
+	}
+	79% {
+		left: 60px;
+	}
+	80% {
+		left: 80px;
+	}
+	99% {
+		left: 80px;
+	}
+	100% {
+		left: 0px;
+	}
 }
