@@ -36,16 +36,18 @@ input[type=radio]{
 	left: -25px;
 	position: absolute;
 	margin-top: 11px;
-	color: #44abe5;
+	color: #007aff;
 }
 .mc-check-radio:before{
 	content: "\f1db";
+	color: #aaa;
 }
 .mc-check-radio.mc-checked:before{
 	content: "\f058";
 }
 .mc-check-checkbox:before{
 	content: "\f096";
+	color: #aaa;
 }
 .mc-check-checkbox.mc-checked:before{
 	content: "\f14a";
@@ -76,13 +78,13 @@ input[type=radio]{
 }
 .mc-block-radio.mc-checked,
 .mc-list-item .mc-block-radio.mc-checked{
-	border: 1px solid #44ABE5;
-	color: #44ABE5;
+	border: 1px solid #007aff;
+	color: #007aff;
 }
 .mc-block-checkbox.mc-checked,
 .mc-list-item .mc-block-checkbox.mc-checked{
-	border: 1px solid #44ABE5;
-	color: #44ABE5;
+	border: 1px solid #007aff;
+	color: #007aff;
 }
 .mc-block-checkbox.mc-checked:before,
 .mc-list-item .mc-block-checkbox.mc-checked:before,
@@ -99,7 +101,7 @@ input[type=radio]{
 	transform: translate(0, 0);
 	font-size: 16px;
 	margin-right: 5px;
-	color: #44ABE5;
+	color: #007aff;
 }
 .mc-block-checkbox.mc-checked:before,
 .mc-list-item .mc-block-checkbox.mc-checked:before{
