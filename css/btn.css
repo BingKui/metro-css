@@ -1,4 +1,5 @@
 /*普通按钮、块级按钮*/
+
 .mc-btn,
 .mc-btn-block,
 .mc-btn-small,
@@ -7,7 +8,7 @@
 .mc-btn-block-small,
 .mc-btn-block-big,
 .mc-btn-block-large,
-.mc-btn-ghost{
+.mc-btn-ghost {
 	margin: 5px;
 	padding: .5em 1em;
 	font-size: 16px;
@@ -20,15 +21,21 @@
 	text-align: center;
 	color: #333;
 }
+
 .mc-btn,
-input[type=button]{
+input[type=button] {
 	display: inline-block;
 }
-.mc-btn-block{
+
+.mc-btn-block {
 	padding: .5em 0;
 	font-size: 16px;
 }
+
+
 /*不同尺寸的按钮*/
+
+
 /*.mc-btn-small,
 .mc-btn-big,
 .mc-btn-large,
@@ -45,52 +52,72 @@ input[type=button]{
 	color: #333;
 	filter:chroma(color=#000000);
 }*/
+
+
 /*重定义块级按钮的样式*/
+
 .mc-btn-block,
 .mc-btn-block-small,
 .mc-btn-block-big,
-.mc-btn-block-large{
+.mc-btn-block-large {
 	display: block;
 	margin: 10px auto;
 	width: 90%;
 	min-width: 30%;
 }
+
+
 /*设置普通按钮的大小尺寸*/
-.mc-btn-small{
+
+.mc-btn-small {
 	padding: .4em 1em;
 	font-size: 15px;
 }
-.mc-btn-big{
+
+.mc-btn-big {
 	padding: .6em 1em;
 	font-size: 17px;
 }
-.mc-btn-large{
+
+.mc-btn-large {
 	padding: .7em 1em;
 	font-size: 18px;
 }
+
+
 /*设置块级按钮的大小尺寸*/
-.mc-btn-block-small{
+
+.mc-btn-block-small {
 	padding: .4em 1em;
 	font-size: 15px;
 }
-.mc-btn-block-big{
+
+.mc-btn-block-big {
 	padding: .6em 1em;
 	font-size: 17px;
 }
-.mc-btn-block-large{
+
+.mc-btn-block-large {
 	padding: .7em 1em;
 	font-size: 18px;
 }
+
+
 /*幽灵按钮样式*/
+
 .mc-btn-ghost,
-.mc-btn-ghost.mc-btn-default{
+.mc-btn-ghost.mc-btn-default {
 	color: #fff;
 	background-color: transparent !important;
 	border-style: solid;
-	border-width:2px ;
+	border-width: 2px;
 	border-color: #fff;
 }
+
+
 /*默认样式hover*/
+
+
 /*.mc-btn:hover,
 .mc-btn:active,
 .mc-btn-block:hover,
@@ -110,91 +137,123 @@ input[type=button]{
 	background-color: #eee;
 }*/
 
+
 /*默认defaults*/
-.mc-btn-default{
+
+.mc-btn-default {
 	border-color: #ccc;
 	background-color: #fff;
 	color: #333;
 }
+
 .mc-btn-default:hover,
-.mc-btn-default:active{
+.mc-btn-default:active {
 	background-color: #eee;
 	border-color: #eee;
 }
-.mc-btn-ghost.mc-btn-default{
+
+.mc-btn-ghost.mc-btn-default {
 	color: #fff;
 }
+
+
 /*推荐项primary*/
-.mc-btn-primary{
+
+.mc-btn-primary {
 	border-color: #337AB7;
 	background-color: #337AB7;
 	color: #fff;
 }
+
 .mc-btn-primary:hover,
-.mc-btn-primary:active{
+.mc-btn-primary:active {
 	background-color: #0C5B9F;
 	border-color: #0C5B9F;
 }
-.mc-btn-ghost.mc-btn-primary{
+
+.mc-btn-ghost.mc-btn-primary {
 	color: #337AB7;
 }
+
+
 /*成功success*/
-.mc-btn-success{
+
+.mc-btn-success {
 	border-color: #34B434;
 	background-color: #34B434;
 	color: #fff;
 }
+
 .mc-btn-success:hover,
-.mc-btn-success:active{
+.mc-btn-success:active {
 	background-color: #259A25;
 	border-color: #259A25;
 }
-.mc-btn-ghost.mc-btn-success{
+
+.mc-btn-ghost.mc-btn-success {
 	color: #5CB85C;
 }
+
+
 /*信息info*/
-.mc-btn-info{
+
+.mc-btn-info {
 	border-color: #5BC0DE;
 	background-color: #5BC0DE;
 	color: #fff;
 }
+
 .mc-btn-info:hover,
-.mc-btn-info:active{
+.mc-btn-info:active {
 	background-color: #2FA0C1;
 	border-color: #2FA0C1;
 }
-.mc-btn-ghost.mc-btn-info{
+
+.mc-btn-ghost.mc-btn-info {
 	color: #5BC0DE;
 }
+
+
 /*警告warning*/
-.mc-btn-warning{
+
+.mc-btn-warning {
 	border-color: #F0AD4E;
 	background-color: #F0AD4E;
 	color: #fff;
 }
+
 .mc-btn-warning:hover,
-.mc-btn-warning:active{
+.mc-btn-warning:active {
 	background-color: #CF7E0B;
 	border-color: #CF7E0B;
 }
-.mc-btn-ghost.mc-btn-warning{
+
+.mc-btn-ghost.mc-btn-warning {
 	color: #F0AD4E;
 }
+
+
 /*危险danger*/
-.mc-btn-danger{
+
+.mc-btn-danger {
 	border-color: #D9534F;
 	background-color: #D9534F;
 	color: #fff;
 }
+
 .mc-btn-danger:hover,
-.mc-btn-danger:active{
+.mc-btn-danger:active {
 	background-color: #BD2420;
 	border-color: #BD2420;
 }
-.mc-btn-ghost.mc-btn-danger{
+
+.mc-btn-ghost.mc-btn-danger {
 	color: #D9534F;
 }
+
+
 /*不可用状态*/
+
 input[type=button]:disabled,
 .mc-btn.disabled,
 .mc-btn-block.disabled,
@@ -203,15 +262,21 @@ input[type=button]:disabled,
 .mc-btn-small.disabled,
 .mc-btn-block-small.disabled,
 .mc-btn-large.disabled,
-.mc-btn-block-large.disabled{
+.mc-btn-block-large.disabled {
 	background-color: #eee;
 	cursor: default;
 }
+
+
 /*圆角*/
-.mc-btn-round{
+
+.mc-btn-round {
 	border-radius: 15px;
 }
+
+
 /*设置图标样式*/
+
 .mc-btn i,
 .mc-btn-block i,
 .mc-btn-small i,
@@ -220,6 +285,70 @@ input[type=button]:disabled,
 .mc-btn-block-small i,
 .mc-btn-block-big i,
 .mc-btn-block-large i,
-.mc-btn-ghost i{
+.mc-btn-ghost i {
 	margin-right: 5px;
+}
+
+
+/*特殊按钮*/
+
+.mc-btn-menu,
+.mc-btn-back,
+.mc-btn-heart,
+.mc-btn-remove,
+.mc-btn-share,
+.mc-btn-star,
+.mc-btn-add{
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	border: none;
+	background-color: #44ABE5;
+	border-radius: 50%;
+	outline: none;
+	cursor: pointer;
+	color: #fff;
+	margin: 5px;
+	padding: 0;
+}
+.mc-btn-menu:after,
+.mc-btn-back:after,
+.mc-btn-heart:after,
+.mc-btn-share:after,
+.mc-btn-remove:after,
+.mc-btn-star:after,
+.mc-btn-add:after {
+	display: inline-block;
+	font: normal normal normal 1.6rem/1 "FontAwesome", sans-serif;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+	font-size: 22px;
+	font-weight: bold;
+}
+.mc-btn-menu:after {
+	content: "\f0c9";
+}
+.mc-btn-back:after {
+	content: "\f053";
+	margin-right: 5px;
+}
+.mc-btn-heart:after{
+	content: "\f004";
+}
+.mc-btn-add:after{
+	content: "\f067";
+}
+.mc-btn-remove:after{
+	content: "\f00d";
+}
+.mc-btn-share:after{
+	content: "\f1e0";
+}
+.mc-btn-star:after{
+	content: "\f005";
 }
