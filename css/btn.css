@@ -271,7 +271,7 @@ input[type=button]:disabled,
 /*圆角*/
 
 .mc-btn-round {
-	border-radius: 15px;
+	border-radius: 25px;
 }
 
 
@@ -300,10 +300,10 @@ input[type=button]:disabled,
 .mc-btn-star,
 .mc-btn-add{
 	display: inline-block;
-	width: 44px;
-	height: 44px;
+	width: 40px;
+	height: 40px;
 	border: none;
-	background-color: #44ABE5;
+	background-color: #007aff;
 	border-radius: 50%;
 	outline: none;
 	cursor: pointer;
@@ -328,6 +328,9 @@ input[type=button]:disabled,
 	-ms-transform: translate(0, 0);
 	transform: translate(0, 0);
 	font-size: 22px;
+	position: absolute;
+	margin-top: -10px;
+	margin-left: -9px;
 	font-weight: bold;
 }
 .mc-btn-menu:after {
@@ -335,10 +338,11 @@ input[type=button]:disabled,
 }
 .mc-btn-back:after {
 	content: "\f053";
-	margin-right: 5px;
 }
 .mc-btn-heart:after{
 	content: "\f004";
+	margin-top: -9px;
+	margin-left: -11px;
 }
 .mc-btn-add:after{
 	content: "\f067";
@@ -348,7 +352,9 @@ input[type=button]:disabled,
 }
 .mc-btn-share:after{
 	content: "\f1e0";
+	margin-left: -10px;
 }
 .mc-btn-star:after{
 	content: "\f005";
+	margin-left: -10px;
 }
