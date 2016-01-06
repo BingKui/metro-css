@@ -1,0 +1,11 @@
+/*星级评分*/
+.mc-start{
+	display:block;
+}
+.mc-list-item .mc-start{
+	position: relative;
+	float: right;
+	display: block;
+	top: 0;
+	right: 30px;
+}
