@@ -1,0 +1,127 @@
+.mc-animate {
+	display: inline-block;
+	width:100px;
+	height: 100px;
+	background-color: rgba(0,0,0,.6);
+	margin: 5px;
+}
+/* 旋转的风车 */
+.mc-animate-windmill {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 100px;
+	height: 70px;
+}
+.mc-animate-windmill .mc-animate-windmill-pillar {
+	position: absolute;
+	top: 8px;
+	left: 43px;
+	display: block;
+	height: 0;
+	width: 4px;
+	border-width: 0 5px 45px 5px;
+	border-style: none solid solid;
+	border-color: transparent transparent white;
+}
+
+.mc-animate-windmill .mc-animate-windmill-axis {
+	position: absolute;
+	top: 0px;
+	left: 46px;
+	width: 4px;
+	height: 4px;
+	border: 3px #fff solid;
+	background-color: #44ABE5;
+	border-radius: 4px;
+	z-index: 88;
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 1s;
+	-moz-transition-property: -moz-transform;
+	-moz-transition-duration: 1s;
+	-webkit-animation: mc-animate-windmill-rotate 3s linear infinite;
+	-moz-animation: mc-animate-windmill-rotate 3s linear infinite;
+	-o-animation: mc-animate-windmill-rotate 3s linear infinite;
+	animation: mc-animate-windmill-rotate 3s linear infinite;
+}
+.mc-animate-windmill .blade{
+	position: absolute;
+	display: block;
+	height: 0;
+	width: 2px;
+	border-width: 30px 2px 0px 2px;
+	border-style: solid solid none;
+	border-color: white transparent transparent;
+	-webkit-transform-origin: 0px 0px;
+	-moz-transform-origin: 0px 0px;
+	-ms-transform-origin: 0px 0px;
+	-o-transform-origin: 0px 0px;
+	transform-origin: 0px 0px;
+}
+
+
+.mc-animate-windmill .blade:nth-child(1) {
+	top: 1px;
+	left: -2px;
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	-ms-transform: rotate(60deg);
+	-o-transform: rotate(60deg);
+	transform: rotate(60deg);
+}
+
+.mc-animate-windmill .blade:nth-child(2) {
+	top: 0px;
+	left: 4.5px;
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.mc-animate-windmill .blade:nth-child(3) {
+	top: 6px;
+	left: 3px;
+	-webkit-transform: rotate(300deg);
+	-moz-transform: rotate(300deg);
+	-ms-transform: rotate(300deg);
+	-o-transform: rotate(300deg);
+	transform: rotate(300deg);
+}
+@-webkit-keyframes mc-animate-windmill-rotate {
+	from {
+		-webkit-transform: rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(360deg)
+	}
+}
+
+@-moz-keyframes mc-animate-windmill-rotate {
+	from {
+		-moz-transform: rotate(0deg)
+	}
+	to {
+		-moz-transform: rotate(359deg)
+	}
+}
+
+@-o-keyframes mc-animate-windmill-rotate {
+	from {
+		-o-transform: rotate(0deg)
+	}
+	to {
+		-o-transform: rotate(359deg)
+	}
+}
+
+@keyframes mc-animate-windmill-rotate {
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(359deg)
+	}
+}
