@@ -38,8 +38,12 @@ textarea {
 
 input,
 select,
-textarea {
+textarea,
+button {
 	font-size: 100%;
+	outline: none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
 }
 
 audio,
