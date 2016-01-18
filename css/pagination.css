@@ -1,0 +1,32 @@
+/*分页*/
+
+.mc-page {
+	height: 50px;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+}
+
+.mc-page .mc-page-item {
+	display: block;
+	border: 1px solid #ddd;
+	display: inline-block;
+	height: 40px;
+	text-align: center;
+	width: 40px;
+	line-height: 40px;
+	background-color: #fff;
+	color: #44ABE5;
+}
+
+.mc-page .mc-page-item.active {
+	background-color: #44ABE5;
+	color: #fff;
+	border-color: #44ABE5;
+}
+
+.mc-page .mc-page-item.mc-prev-page,
+.mc-page .mc-page-item.mc-next-page {
+	width: 70px;
+}
