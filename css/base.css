@@ -252,6 +252,7 @@ th {
 }
 
 ul,
+ol,
 li {
 	list-style: none;
 	margin: 0 0 0 0;
