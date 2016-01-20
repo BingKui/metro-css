@@ -380,6 +380,7 @@ th {
 }
 
 ul,
+ol,
 li {
 	list-style: none;
 	margin: 0 0 0 0;
@@ -406,6 +407,76 @@ li {
 	-webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, .3);
 	background-color: transparent;
 }*/
+/*面包屑*/
+
+.mc-breadcrumb,
+.mc-breadcrumb-avg {
+	display: block;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	/*overflow: hidden;*/
+	position: relative;
+}
+
+.mc-breadcrumb .mc-breadcrumb-item,
+.mc-breadcrumb-avg .mc-breadcrumb-item {
+	display: inline-block;
+	text-align: center;
+}
+.mc-breadcrumb .mc-breadcrumb-item.active {
+	color: #44ABE5;
+}
+
+.mc-breadcrumb>li+li:before {
+	display: inline-block;
+	font: normal normal normal 1.6rem/1 "FontAwesome", sans-serif;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+	content: "\f101";
+	padding: 0 6px;
+	color: #ccc;
+}
+
+.mc-slash-split>li+li:before {
+	content: "/";
+	padding: 0 6px;
+	color: #ccc;
+	box-sizing: border-box;
+}
+/*.mc-breadcrumb-avg .mc-breadcrumb-item{
+	width: 20%;
+}
+.mc-breadcrumb-avg .mc-breadcrumb-item.active{
+	background-color: #44ABE5;
+	color: #fff;
+}
+.mc-breadcrumb-avg .mc-breadcrumb-item.active span{
+	content:'';
+	width: 0;
+	height: 0;
+	display: block;
+	float: left;
+	border: 15px solid;
+	border-right-color: transparent;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+}
+.mc-breadcrumb-avg .mc-breadcrumb-item.active span:nth-child(2){
+	float: right;
+	margin-right: -30px;
+	border-color: #fff;
+	border-left-color: #44ABE5;
+}
+.mc-breadcrumb-avg .mc-breadcrumb-item.active:before{
+	left: 0;
+}*/
+
 /*普通按钮、块级按钮*/
 
 .mc-btn,
@@ -5572,20 +5643,6 @@ input,textarea{border:0;-webkit-appearance: none;}
 		transform: rotate(360deg)
 	}
 }
-.w-350{
-	width: 350px;
-	margin: 0 auto;
-}
-.w-820{
-	width: 820px;
-	margin: 0 auto;
-}
-.box{
-	border: 1px solid #ccc;
-	height: auto;
-	width: auto;
-	overflow: hidden;
-}
 /*公共可以使用的css样式*/
 .mc-radius{
 	border-radius: 4px;
@@ -5598,6 +5655,9 @@ input,textarea{border:0;-webkit-appearance: none;}
 }
 .mc-align-center{
 	text-align: center;
+}
+.mc-content{
+	padding-top: 44px;
 }
 /*三角形*/
 .mc-triangle {
@@ -6254,6 +6314,38 @@ input,textarea{border:0;-webkit-appearance: none;}
     height: 105px; 
 }
 
+/*分页*/
+
+.mc-page {
+	height: 50px;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+}
+
+.mc-page .mc-page-item {
+	display: block;
+	border: 1px solid #ddd;
+	display: inline-block;
+	height: 40px;
+	text-align: center;
+	width: 40px;
+	line-height: 40px;
+	background-color: #fff;
+	color: #44ABE5;
+}
+
+.mc-page .mc-page-item.active {
+	background-color: #44ABE5;
+	color: #fff;
+	border-color: #44ABE5;
+}
+
+.mc-page .mc-page-item.mc-prev-page,
+.mc-page .mc-page-item.mc-next-page {
+	width: 70px;
+}
 .mc-panel{
 	display: block;
 	width: 100%;
