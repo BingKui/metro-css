@@ -6768,6 +6768,62 @@ input,textarea{border:0;-webkit-appearance: none;}
 	min-width: 170px;
 	padding: 16px 20px;
 }
+.mc-toast{
+	width: 70%;
+	display: block;
+	height: 50px;
+	background: rgba(54,136,201,1);
+	margin: 0 auto;
+	color: #fff;
+	max-width: 350px;
+	touch-action: none;
+	-webkit-user-select: none;
+	cursor: default;
+}
+.mc-toast-success,
+.mc-toast-info,
+.mc-toast-warning,
+.mc-toast-error{
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+}
+.mc-toast-success:before,
+.mc-toast-info:before,
+.mc-toast-warning:before,
+.mc-toast-error:before{
+	display: inline-block;
+	font: normal normal normal 1.6rem/1 "FontAwesome", sans-serif;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+	font-size: 20px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	border: none;
+}
+.mc-toast-success:before{
+	content: '\f00c';
+	background-color: #34B434;
+}
+.mc-toast-info:before{
+	content: '\f129';
+	background-color: #5BC0DE;
+}
+.mc-toast-warning:before{
+	content: '\f071';
+	background-color: #F0AD4E;
+}
+.mc-toast-error:before{
+	content: '\f00d';
+	background-color: #D9534F;
+}
 
 /*星级评分*/
 .mc-start{
