@@ -1051,7 +1051,7 @@ input[type=radio]{
 	height: 44px;
 	display: block;
 	width: 100%;
-	background-color: #7A6EA0;
+	background-color: #44abe5;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -1059,7 +1059,7 @@ input[type=radio]{
 .mc-menu-left ,.mc-menu-right{
     width: 44px;
     height: 44px;
-	font-size: 20px;
+	font-size: 15px;
     position: absolute;
     text-align: center;
     line-height: 44px;
@@ -1075,7 +1075,6 @@ input[type=radio]{
 	right: 44px;
     left: 44px;
     font-size: 17px;
-    font-weight: bold;
     line-height: 44px;
     padding: 0;
     white-space: nowrap;
