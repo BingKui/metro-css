@@ -1,9 +1,12 @@
 .mc-table {
 	color: #333333;
 	border-collapse: collapse;
-	width: 95%;
+	width: 100%;
 	margin: 10px auto;
 	border: 1px solid #e8e8e8;
+	border-left: none;
+	border-right: none;
+	margin-bottom: 10px;
 }
 .mc-table thead th,
 .mc-table tbody td,
@@ -14,7 +17,9 @@
 	border-color: #e8e8e8;
 	font-size: 12px;
 }
-.mc-table thead th{
+.mc-table thead th,
+.mc-table thead td{
+	padding: 8px;
 	font-size: 14px;
 	text-align: left;
 	border: none;
@@ -27,10 +32,4 @@
 }
 .mc-table tr:hover{
 	background-color: #dbecf9;
-}
-.mc-table tbody tr:first-child td{
-	background-color: #798979;
-}
-.mc-table tbody tr:nth-child(odd) td{
-	background-color: #ECF6EC;
 }
