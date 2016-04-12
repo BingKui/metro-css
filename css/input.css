@@ -1,67 +1,86 @@
-input,textarea{border:0;-webkit-appearance: none;}
+input,
+textarea {
+	border: 0;
+	-webkit-appearance: none;
+}
+
 ::-webkit-input-placeholder {
 	/* WebKit browsers */
 	font-size: 14px;
 	color: #9c9c9c;
 }
+
 :-moz-placeholder {
 	/* Mozilla Firefox 4 to 18 */
 	font-size: 14px;
 	color: #9c9c9c;
 }
+
 ::-moz-placeholder {
 	/* Mozilla Firefox 19+ */
 	font-size: 14px;
 	color: #9c9c9c;
 }
+
 :-ms-input-placeholder {
 	/* Internet Explorer 10+ */
 	font-size: 14px;
 	color: #9c9c9c;
 }
+
 .mc-plac-right .mc-input::-webkit-input-placeholder {
 	/* WebKit browsers */
 	font-size: 14px;
 	color: #9c9c9c;
 }
+
 .mc-plac-right .mc-input:-moz-placeholder {
 	/* Mozilla Firefox 4 to 18 */
 	font-size: 14px;
 	color: #9c9c9c;
 }
+
 .mc-plac-right .mc-input::-moz-placeholder {
 	/* Mozilla Firefox 19+ */
 	font-size: 14px;
 	color: #9c9c9c;
 }
+
 .mc-plac-right .mc-input:-ms-input-placeholder {
 	/* Internet Explorer 10+ */
 	font-size: 14px;
 	color: #9c9c9c;
 }
+
 .mc-textarea::-webkit-input-placeholder {
 	/* WebKit browsers */
 	font-size: 14px;
 	color: #9c9c9c;
 }
+
 .mc-textarea:-moz-placeholder {
 	/* Mozilla Firefox 4 to 18 */
 	font-size: 14px;
 	color: #9c9c9c;
 }
+
 .mc-textarea::-moz-placeholder {
 	/* Mozilla Firefox 19+ */
 	font-size: 14px;
 	color: #9c9c9c;
 }
+
 .mc-textarea:-ms-input-placeholder {
 	/* Internet Explorer 10+ */
 	font-size: 14px;
 	color: #9c9c9c;
 }
+
+
 /*普通输入框*/
+
 .mc-input,
-.mc-textarea{
+.mc-textarea {
 	display: inline-block;
 	height: 45px;
 	width: 90%;
@@ -77,24 +96,29 @@ input,textarea{border:0;-webkit-appearance: none;}
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-tap-highlight-color: transparent;
 }
-.mc-textarea{
+
+.mc-textarea {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+
 .mc-input:focus,
 .mc-input:active,
 .mc-textarea:focus,
-.mc-textarea:active{
-	
-}
+.mc-textarea:active {}
+
+
 /*组合输入框*/
-.mc-input-group{
+
+.mc-input-group {
 	width: 100%;
 	display: block;
 	height: auto;
+	overflow: hidden;
 	background-color: #fff;
 }
-.mc-input-text{
+
+.mc-input-text {
 	display: block;
 	float: left;
 	height: 45px;
@@ -106,10 +130,27 @@ input,textarea{border:0;-webkit-appearance: none;}
 	display: inline;
 	background-color: #fff;
 }
-.mc-input-group .mc-input{
+
+.mc-input-group .mc-input {
 	width: 65%;
 	padding: 0 5% 0 30%;
 	display: block;
 	float: left;
 }
 
+
+/*组合列表*/
+
+.mc-list .mc-input-group {
+	height: 45px;
+	margin: 3px 0px;
+}
+
+.mc-list .mc-input-group .mc-input-text {
+	text-indent: 0;
+	width: auto;
+}
+
+.mc-list .mc-input-group .mc-input {
+	padding-left: 20%;
+}
