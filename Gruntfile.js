@@ -19,7 +19,7 @@
 				csslintrc: '.csslintrc'
 			},
 			dist: [
-				'dest/<%= pkg.name %>.css'
+				'dest/<%= pkg.name %>.autoprefixer.css'
 			]
 		},
 		cssmin: {
@@ -34,7 +34,7 @@
 			},
 			build: {
 				files: [{
-					"dest/<%= pkg.name %>.min.css": ['<%= concat.cssbuild.dest %>']
+					"dest/<%= pkg.name %>.min.css": ['dest/<%= pkg.name %>.autoprefixer.css']
 				}]
 			}
 		},
