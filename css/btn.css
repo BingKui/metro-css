@@ -32,7 +32,6 @@ input[type=button] {
 }
 .mc-btn-block {
 	padding: .5em 0;
-	font-size: 16px;
 }
 
 
@@ -323,7 +322,6 @@ input[type=button]:disabled,
 .mc-btn-add:after {
 	display: inline-block;
 	font: normal normal normal 1.6rem/1 "FontAwesome", sans-serif;
-	font-size: inherit;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
