@@ -7,21 +7,6 @@
 				dest: "dest/<%= pkg.name %>.css"
 			}
 		},
-		autoprefixer: {
-			dist: {
-				files: {
-					'dest/<%= pkg.name %>.autoprefixer.css': '<%= pkg.name %>.css'
-				}
-			}
-		},
-		csslint: {
-			options: {
-				csslintrc: '.csslintrc'
-			},
-			dist: [
-				'dest/<%= pkg.name %>.autoprefixer.css'
-			]
-		},
 		cssmin: {
 			options: {
 				banner: '/*!\n' +
@@ -34,14 +19,12 @@
 			},
 			build: {
 				files: [{
-					"dest/<%= pkg.name %>.min.css": ['dest/<%= pkg.name %>.autoprefixer.css']
+					"dest/<%= pkg.name %>.min.css": ['dest/<%= pkg.name %>.css']
 				}]
 			}
 		},
 	});
 	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-autoprefixer');
-	grunt.loadNpmTasks('grunt-contrib-csslint');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.registerTask('default', ['concat','autoprefixer','csslint', 'cssmin']);
+	grunt.registerTask('default', ['concat', 'cssmin']);
 }
