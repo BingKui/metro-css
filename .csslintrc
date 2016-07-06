@@ -1,5 +1,5 @@
 {
-  "adjoining-classes": false,
+  "adjoining-classes": true,
   "box-sizing": false,
   "box-model": false,
   "compatible-vendor-prefixes": false,
