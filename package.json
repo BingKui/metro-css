@@ -1,7 +1,7 @@
 {
-	"name": "MetroCss",
-	"version": "0.0.1",
-	"homepage": "http://bingkui.github.io/metro-css/",
+	"name": "metrocss",
+	"version": "1.0.0",
+	"homepage": "http://bingkui.github.io/metrocss/",
 	"author": "康兵奎",
 	"description": "一款专注移动端的Css组件库，提供在手机端使用的大部分Metro风格组件，通过使用可以快速的构建类似Window Metro风格的网页应用。",
 	"devDependencies": {
