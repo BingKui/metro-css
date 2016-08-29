@@ -172,7 +172,6 @@ input[type=button] {
 	background-color: #0C5B9F;
 	border-color: #0C5B9F;
 }
-
 .mc-btn-ghost.mc-btn-primary {
 	color: #337AB7;
 }
@@ -265,7 +264,8 @@ input[type=button]:disabled,
 .mc-btn-block-small.disabled,
 .mc-btn-large.disabled,
 .mc-btn-block-large.disabled {
-	background-color: #eee;
+	background-color: #f2f2f2;
+	color: #ccc;
 	cursor: default;
 }
 
