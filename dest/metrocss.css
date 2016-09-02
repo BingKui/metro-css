@@ -7069,7 +7069,7 @@ textarea {
 	margin-left: 0;
 }
 /*toast提示*/
-.mc-tip-toast{
+.mc-toast{
 	background-color: rgba(0,0,0,.7);
 	font-size: 15px;
 	color: #fff;
@@ -7078,31 +7078,18 @@ textarea {
 	display: block;
 	text-align: center;
 	max-width: 275px;
-	min-width: 170px;
-	padding: 16px 20px;
+	min-width: 100px;
 }
-.mc-toast{
-	width: 70%;
-	display: block;
-	height: 50px;
-	background: rgba(0,0,0,.4);
-	margin: 0 auto;
-	color: #fff;
-	max-width: 350px;
-	touch-action: none;
-	-webkit-user-select: none;
-	cursor: default;
-	overflow: hidden;
-	border-radius: 4px;
-}
+.mc-toast-default,
 .mc-toast-success,
 .mc-toast-info,
 .mc-toast-warning,
 .mc-toast-error{
 	text-align: center;
-	height: 50px;
-	line-height: 50px;
+	height: 35px;
+	line-height: 35px;
 }
+.mc-toast-default:before,
 .mc-toast-success:before,
 .mc-toast-info:before,
 .mc-toast-warning:before,
@@ -7116,12 +7103,16 @@ textarea {
 	-webkit-transform: translate(0, 0);
 	-ms-transform: translate(0, 0);
 	transform: translate(0, 0);
-	font-size: 20px;
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
+	font-size: 18px;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
 	float: left;
 	border: none;
+}
+.mc-toast-default:before{
+	content: "\f004";
+	background-color: #337AB7;
 }
 .mc-toast-success:before{
 	content: '\f00c';
