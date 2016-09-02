@@ -91,13 +91,15 @@
 	width: 70%;
 	display: block;
 	height: 50px;
-	background: rgba(54,136,201,1);
+	background: rgba(0,0,0,.4);
 	margin: 0 auto;
 	color: #fff;
 	max-width: 350px;
 	touch-action: none;
 	-webkit-user-select: none;
 	cursor: default;
+	overflow: hidden;
+	border-radius: 4px;
 }
 .mc-toast-success,
 .mc-toast-info,

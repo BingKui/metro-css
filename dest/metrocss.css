@@ -647,7 +647,6 @@ input[type=button] {
 	background-color: #0C5B9F;
 	border-color: #0C5B9F;
 }
-
 .mc-btn-ghost.mc-btn-primary {
 	color: #337AB7;
 }
@@ -740,7 +739,8 @@ input[type=button]:disabled,
 .mc-btn-block-small.disabled,
 .mc-btn-large.disabled,
 .mc-btn-block-large.disabled {
-	background-color: #eee;
+	background-color: #f2f2f2;
+	color: #ccc;
 	cursor: default;
 }
 
@@ -7085,13 +7085,15 @@ textarea {
 	width: 70%;
 	display: block;
 	height: 50px;
-	background: rgba(54,136,201,1);
+	background: rgba(0,0,0,.4);
 	margin: 0 auto;
 	color: #fff;
 	max-width: 350px;
 	touch-action: none;
 	-webkit-user-select: none;
 	cursor: default;
+	overflow: hidden;
+	border-radius: 4px;
 }
 .mc-toast-success,
 .mc-toast-info,
